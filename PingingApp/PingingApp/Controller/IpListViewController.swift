@@ -8,10 +8,13 @@
 
 import UIKit
 import PlainPing
+//import SwiftPing
 
 class IpListViewController: UITableViewController {
 
     @IBOutlet weak var StartButton: UIBarButtonItem!
+    @IBOutlet weak var ProgressView: UIProgressView!
+
     private var ipAddress : String = ""
     private var ipArray : [Ip] = []
     private var currentIndex = 1
@@ -22,7 +25,6 @@ class IpListViewController: UITableViewController {
 
         let ipGetter = IpGetter()
         ipAddress = ipGetter.getIPAddress()
-        // Do any additional setup after loading the view.
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -52,30 +54,82 @@ class IpListViewController: UITableViewController {
         else{
             StartButton.title = "Stop"
         }
-        pingNext()
+        
+//        let queue = DispatchQueue(label: "PingingApp", attributes: .concurrent)
+//
+//        queue.async {
+//            self.pingNext(test: 1)
+//            self.pingNext(test: 2)
+//            self.pingNext(test: 3)
+//            self.pingNext(test: 4)
+//            self.pingNext(test: 5)
+//
+//        }
+            //DispatchQueue.global(qos: .userInitiated).async {
+//            DispatchQueue.concurrentPerform(iterations: 10) { (count) in
+//                DispatchQueue.global(qos: .userInitiated).async {
+//                    self.pingNext(test: count)
+//                }
+            //}
+        
+            DispatchQueue.concurrentPerform(iterations: 10) { (count) in
+                DispatchQueue.main.async {
+                    self.pingNext(test: count, firstIteration: true)
+                }
+        }
+//        DispatchQueue.main.async {
+//            self.pingNext(test: 2)
+//            self.pingNext(test: 4)
+//        }
+        //}
+
+
     }
-    func pingNext() {
+    
+    func pingNext(test : Int, firstIteration :Bool) {
+        print("\(test) pradzia")
+        if ipArray.count >= 254 {
+            isStopped = true;
+            StartButton.title = "Start"
+            return
+        }
         
         if isStopped{
             return
         }
-        
-        let currentAddress = "\(ipAddress)\(currentIndex)"
+//
+//        if firstIteration{
+//            currentIndex = currentIndex + test
+//            print(currentIndex)
+//            print(test)
+//        }
+        let currentAddress = "\(ipAddress)\(test)"
         let ipObj = Ip()
-        ipObj.ipAddress = currentAddress
+        ipObj.ipAddress = "\(currentAddress) : thread: \(test)"
         let ping = currentAddress
-        currentIndex = currentIndex + 1
-        PlainPing.ping(ping, withTimeout: 1.0, completionBlock: { (timeElapsed:Double?, error:Error?) in
-            if let latency = timeElapsed {
+        PlainPing.ping(ping, withTimeout: 1, completionBlock: { (timeElapsed:Double?, error:Error?) in
+            if timeElapsed != nil {
                 ipObj.reachable = true
             }
             else{
                 ipObj.reachable = false
             }
+            if let error = error?.localizedDescription{
+                print(error)
+            }
+            
             self.ipArray.append(ipObj)
-            self.tableView.reloadData()
-            self.pingNext()
+            self.currentIndex = self.currentIndex + 1
+            DispatchQueue.main.async {
+                self.ProgressView.setProgress(Float(self.ipArray.count) / Float(255), animated: true)
+                self.tableView.reloadData()
+            }
+            self.pingNext(test: test, firstIteration: false)
         })
+        
+        //print(ipObj.ipAddress)
+        
+        //pingNext(test: test)
     }
 
 

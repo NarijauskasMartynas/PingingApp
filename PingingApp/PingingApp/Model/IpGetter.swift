@@ -34,6 +34,7 @@ class IpGetter{
             freeifaddrs(ifaddr)
         }
         
+        print("\(address)")
         if let addrToRemove = address?.components(separatedBy: ".")[3]{
             address = address?.replacingOccurrences(of: addrToRemove, with: "")
         }

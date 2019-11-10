@@ -30,7 +30,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="PnE-ru-TRD">
+                        <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" title="Item" id="g5h-z3-cWa"/>
+                        <progressView key="titleView" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" id="QNg-Co-uMX">
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </progressView>
                         <barButtonItem key="rightBarButtonItem" title="Start" id="lW0-yC-FDQ">
                             <connections>
                                 <action selector="startPinging:" destination="EDH-rP-mZL" id="VBB-9U-1cG"/>
@@ -38,6 +42,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="ProgressView" destination="QNg-Co-uMX" id="JBP-6p-cGs"/>
                         <outlet property="StartButton" destination="lW0-yC-FDQ" id="NAu-Xe-YT9"/>
                     </connections>
                 </tableViewController>
