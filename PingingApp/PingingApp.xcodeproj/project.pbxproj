@@ -7,21 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		61A3F835285B5372CE2CF149 /* Pods_PingingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D3B8AF695E65B48257F1A2 /* Pods_PingingApp.framework */; };
+		6B7584481DA387B27AC8B851 /* Pods_PingingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45D0F61D8C7D85CD2783D76 /* Pods_PingingApp.framework */; };
 		C70495F02376DAB60075B7DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70495EF2376DAB60075B7DC /* AppDelegate.swift */; };
 		C70495F22376DAB60075B7DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70495F12376DAB60075B7DC /* SceneDelegate.swift */; };
 		C70495F42376DAB60075B7DC /* IpListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70495F32376DAB60075B7DC /* IpListViewController.swift */; };
 		C70495F72376DAB70075B7DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70495F52376DAB70075B7DC /* Main.storyboard */; };
 		C70495F92376DABA0075B7DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C70495F82376DABA0075B7DC /* Assets.xcassets */; };
 		C70495FC2376DABA0075B7DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70495FA2376DABA0075B7DC /* LaunchScreen.storyboard */; };
+		C76EB9DC237ABC95008F7695 /* Pinger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EB9DB237ABC95008F7695 /* Pinger.swift */; };
+		C76EB9DE237AD0AB008F7695 /* SwiftyPing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EB9DD237AD0AB008F7695 /* SwiftyPing.swift */; };
 		C7EA5BD52376F9EE00CB83E8 /* IpGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA5BD42376F9EE00CB83E8 /* IpGetter.swift */; };
 		C7EA5BD72377075A00CB83E8 /* Ip.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA5BD62377075A00CB83E8 /* Ip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		54D8752AF747BBE81CD85416 /* Pods-PingingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingingApp.release.xcconfig"; path = "Target Support Files/Pods-PingingApp/Pods-PingingApp.release.xcconfig"; sourceTree = "<group>"; };
-		AB6E8B07407CB51C08425AA3 /* Pods-PingingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingingApp.debug.xcconfig"; path = "Target Support Files/Pods-PingingApp/Pods-PingingApp.debug.xcconfig"; sourceTree = "<group>"; };
-		B1D3B8AF695E65B48257F1A2 /* Pods_PingingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PingingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EF58EE20F1453A32475A28B /* Pods-PingingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingingApp.release.xcconfig"; path = "Target Support Files/Pods-PingingApp/Pods-PingingApp.release.xcconfig"; sourceTree = "<group>"; };
+		C45D0F61D8C7D85CD2783D76 /* Pods_PingingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PingingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70495EC2376DAB60075B7DC /* PingingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PingingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70495EF2376DAB60075B7DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C70495F12376DAB60075B7DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,9 +31,12 @@
 		C70495F82376DABA0075B7DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C70495FB2376DABA0075B7DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C70495FD2376DABA0075B7DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C76EB9DB237ABC95008F7695 /* Pinger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pinger.swift; sourceTree = "<group>"; };
+		C76EB9DD237AD0AB008F7695 /* SwiftyPing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyPing.swift; sourceTree = "<group>"; };
 		C7EA5BD32376F93400CB83E8 /* PingingApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PingingApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		C7EA5BD42376F9EE00CB83E8 /* IpGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpGetter.swift; sourceTree = "<group>"; };
 		C7EA5BD62377075A00CB83E8 /* Ip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ip.swift; sourceTree = "<group>"; };
+		F3762F7F00C853DD5580C169 /* Pods-PingingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingingApp.debug.xcconfig"; path = "Target Support Files/Pods-PingingApp/Pods-PingingApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61A3F835285B5372CE2CF149 /* Pods_PingingApp.framework in Frameworks */,
+				6B7584481DA387B27AC8B851 /* Pods_PingingApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,16 +54,16 @@
 		30EC10A3EAF2E81AD86C670E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AB6E8B07407CB51C08425AA3 /* Pods-PingingApp.debug.xcconfig */,
-				54D8752AF747BBE81CD85416 /* Pods-PingingApp.release.xcconfig */,
+				F3762F7F00C853DD5580C169 /* Pods-PingingApp.debug.xcconfig */,
+				1EF58EE20F1453A32475A28B /* Pods-PingingApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		40849EDAC19C1CC97117B036 /* Frameworks */ = {
+		4AB5E22EB4AFD7E415D7AFA3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B1D3B8AF695E65B48257F1A2 /* Pods_PingingApp.framework */,
+				C45D0F61D8C7D85CD2783D76 /* Pods_PingingApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -70,7 +74,7 @@
 				C70495EE2376DAB60075B7DC /* PingingApp */,
 				C70495ED2376DAB60075B7DC /* Products */,
 				30EC10A3EAF2E81AD86C670E /* Pods */,
-				40849EDAC19C1CC97117B036 /* Frameworks */,
+				4AB5E22EB4AFD7E415D7AFA3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +107,8 @@
 			children = (
 				C7EA5BD62377075A00CB83E8 /* Ip.swift */,
 				C7EA5BD42376F9EE00CB83E8 /* IpGetter.swift */,
+				C76EB9DB237ABC95008F7695 /* Pinger.swift */,
+				C76EB9DD237AD0AB008F7695 /* SwiftyPing.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -130,11 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C70496002376DABA0075B7DC /* Build configuration list for PBXNativeTarget "PingingApp" */;
 			buildPhases = (
-				523BF28549F99BEFDD5AD71C /* [CP] Check Pods Manifest.lock */,
+				82D873BA63442A93400BCFFC /* [CP] Check Pods Manifest.lock */,
 				C70495E82376DAB60075B7DC /* Sources */,
 				C70495E92376DAB60075B7DC /* Frameworks */,
 				C70495EA2376DAB60075B7DC /* Resources */,
-				245A75CECB1593FEE4CE0D54 /* [CP] Embed Pods Frameworks */,
+				5F0CFD9135CB85715BFD3D7D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,7 +198,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		245A75CECB1593FEE4CE0D54 /* [CP] Embed Pods Frameworks */ = {
+		5F0CFD9135CB85715BFD3D7D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -209,7 +215,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PingingApp/Pods-PingingApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		523BF28549F99BEFDD5AD71C /* [CP] Check Pods Manifest.lock */ = {
+		82D873BA63442A93400BCFFC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -238,8 +244,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C76EB9DC237ABC95008F7695 /* Pinger.swift in Sources */,
 				C70495F42376DAB60075B7DC /* IpListViewController.swift in Sources */,
 				C7EA5BD52376F9EE00CB83E8 /* IpGetter.swift in Sources */,
+				C76EB9DE237AD0AB008F7695 /* SwiftyPing.swift in Sources */,
 				C70495F02376DAB60075B7DC /* AppDelegate.swift in Sources */,
 				C7EA5BD72377075A00CB83E8 /* Ip.swift in Sources */,
 				C70495F22376DAB60075B7DC /* SceneDelegate.swift in Sources */,
@@ -384,7 +392,7 @@
 		};
 		C70496012376DABA0075B7DC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB6E8B07407CB51C08425AA3 /* Pods-PingingApp.debug.xcconfig */;
+			baseConfigurationReference = F3762F7F00C853DD5580C169 /* Pods-PingingApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -403,7 +411,7 @@
 		};
 		C70496022376DABA0075B7DC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 54D8752AF747BBE81CD85416 /* Pods-PingingApp.release.xcconfig */;
+			baseConfigurationReference = 1EF58EE20F1453A32475A28B /* Pods-PingingApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

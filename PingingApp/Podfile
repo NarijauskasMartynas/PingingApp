@@ -7,5 +7,5 @@ target 'PingingApp' do
 
   # Pods for PingingApp
   pod 'PlainPing'
-
+  pod 'SwiftPing', :path => 'SwiftPing'
 end

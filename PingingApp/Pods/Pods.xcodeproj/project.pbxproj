@@ -8,19 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		0768FEAC866E87AE8EC777F0D6D7ECD6 /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A40E786E103518EA9D4E39135D162BB /* SimplePing.m */; };
+		1D59E3DE2062CECEB9F12E79CAC9D69A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		1F80BB3715C67FA51CD73DE4EBFCAA70 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5470D035A5F6EC178CD3A9F9B44A9C /* Shared.swift */; };
+		26E03A1EBA240055EAA0CB04C5DD161B /* iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A1994AB8A1620227EED33460D76BD /* iOS.swift */; };
 		2DB19A681E324342D87CCD8A3203A3AF /* PlainPing-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1BF9F1FB3C80716648E50FF1ACE042 /* PlainPing-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		75B3F7E1856EACAE548FB0757154D0C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		8E2DEE855BBCC2080F8915E2012A645D /* Pods-PingingApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 48B63C5ABCD1630D1A8A626933F95C14 /* Pods-PingingApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4987C36F8784126696A869FB8FF3DA4A /* PingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4629905A7D428C11F1EFFA1F793562 /* PingConfiguration.swift */; };
+		786E46FB999FD35B398BF645A2C8A739 /* PingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069751859114E7F0EE12395B0800994B /* PingResponse.swift */; };
+		AC8D9AF54D4F4F5CB4D3537B582A8C9D /* SwiftPing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B94E7DE6AC49F65C28F6A8603CD327 /* SwiftPing.swift */; };
+		AF967FEABD133263CB9BED7E883F8AB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		B00E2839609B4E34914F42EE0902732F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		B0814ED096380351141131F2C31A8431 /* Pods-PingingApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3132DAEC136ADDDBA955FFDAE7C6ACC1 /* Pods-PingingApp-dummy.m */; };
 		B0AE6E728871E6ED7A5672D14D9FD9B2 /* SimplePing.h in Headers */ = {isa = PBXBuildFile; fileRef = 1411FFD3306DD8B0F594AD88F64CBA6B /* SimplePing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B10A8A87DF14DB313D7721E440F1B50A /* SwiftPing-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 640541655018C22E87F2AE8FCFFFCF6D /* SwiftPing-dummy.m */; };
+		C63EAC9C3F1A58598BB4477B6FAFFD8F /* Pods-PingingApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3132DAEC136ADDDBA955FFDAE7C6ACC1 /* Pods-PingingApp-dummy.m */; };
+		D4BD5EC6967FCBCB500077BF7F57C766 /* SwiftPing-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA3A209F9804188BEB1F0E473E0693B3 /* SwiftPing-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE4B7A383B14B9E1F94FC4B32FED7F79 /* PlainPing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2574D282484154054DEB34659CB14E29 /* PlainPing.swift */; };
+		E85AF1CABA37B27D32E58013332CB2AF /* Pods-PingingApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 48B63C5ABCD1630D1A8A626933F95C14 /* Pods-PingingApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F08C5B0B1A890F884FF463ABC62BA0A2 /* ICMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B0FE300F6E729D2A8E85495CBE6A8 /* ICMP.swift */; };
 		F330AFAD86B299CD69AB1AD7C90E87EF /* PlainPing-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BBD6E52A4940339D1FFA03C21862201 /* PlainPing-dummy.m */; };
 		F95835079F229816B6253F81DFC9B374 /* SimplePingAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635957E23D80285A0BBD3338A8A27838 /* SimplePingAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0EBD08800245BA874C2B19837D28E7E7 /* PBXContainerItemProxy */ = {
+		3D234D1945BE108EA3BE98B4954AD8D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CBB642B03D9B0149B80AC23FCDEFD66;
+			remoteInfo = SwiftPing;
+		};
+		59A54243123E3A5C43E8898095E0FA89 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -30,32 +46,56 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00043FE0C68484EA525131F602D3D4EB /* SwiftPing-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftPing-Info.plist"; sourceTree = "<group>"; };
+		069751859114E7F0EE12395B0800994B /* PingResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PingResponse.swift; sourceTree = "<group>"; };
+		0CF6152C69DFE84CA8F6921A212DB178 /* SwiftPing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftPing.xcconfig; sourceTree = "<group>"; };
 		1411FFD3306DD8B0F594AD88F64CBA6B /* SimplePing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SimplePing.h; path = Pod/Classes/SimplePing.h; sourceTree = "<group>"; };
 		17472DEC6746B1D9C8355E63AFE9B790 /* Pods-PingingApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PingingApp-frameworks.sh"; sourceTree = "<group>"; };
 		17BDE960480BE5A36C34A88CD15BCFA3 /* PlainPing-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PlainPing-prefix.pch"; sourceTree = "<group>"; };
 		1BBD6E52A4940339D1FFA03C21862201 /* PlainPing-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PlainPing-dummy.m"; sourceTree = "<group>"; };
 		2574D282484154054DEB34659CB14E29 /* PlainPing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlainPing.swift; path = Pod/Classes/PlainPing.swift; sourceTree = "<group>"; };
+		2B59C078070148CA84F843ABA0AAD899 /* SwiftPing-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftPing-prefix.pch"; sourceTree = "<group>"; };
 		3132DAEC136ADDDBA955FFDAE7C6ACC1 /* Pods-PingingApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PingingApp-dummy.m"; sourceTree = "<group>"; };
 		313E1F0F6810E463D76717972BE88ECE /* PlainPing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PlainPing.xcconfig; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		328A1994AB8A1620227EED33460D76BD /* iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = iOS.swift; sourceTree = "<group>"; };
+		380FAD4F5A51AA4569554E46D197B450 /* SwiftPing.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SwiftPing.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3A40E786E103518EA9D4E39135D162BB /* SimplePing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SimplePing.m; path = Pod/Classes/SimplePing.m; sourceTree = "<group>"; };
 		3ED574968BE27885595B8D81F11A725B /* PlainPing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PlainPing.framework; path = PlainPing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B63C5ABCD1630D1A8A626933F95C14 /* Pods-PingingApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PingingApp-umbrella.h"; sourceTree = "<group>"; };
 		5F093BABA3E6A9CAFE715EBE1A589593 /* Pods-PingingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PingingApp.debug.xcconfig"; sourceTree = "<group>"; };
 		635957E23D80285A0BBD3338A8A27838 /* SimplePingAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimplePingAdapter.swift; path = Pod/Classes/SimplePingAdapter.swift; sourceTree = "<group>"; };
+		640541655018C22E87F2AE8FCFFFCF6D /* SwiftPing-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftPing-dummy.m"; sourceTree = "<group>"; };
+		6D4629905A7D428C11F1EFFA1F793562 /* PingConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PingConfiguration.swift; sourceTree = "<group>"; };
+		79B94E7DE6AC49F65C28F6A8603CD327 /* SwiftPing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftPing.swift; sourceTree = "<group>"; };
+		7E5470D035A5F6EC178CD3A9F9B44A9C /* Shared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
 		7F83A470BFE1CFC26FEFE5C587456D65 /* Pods-PingingApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PingingApp.modulemap"; sourceTree = "<group>"; };
 		810ED53B99857085E0A881299288756D /* Pods_PingingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PingingApp.framework; path = "Pods-PingingApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CA9B05D41DE25D70CD1620D9D51D9A /* Pods-PingingApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PingingApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A84B779F46D06DDAC99651D7F15EB4C1 /* SwiftPing.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftPing.modulemap; sourceTree = "<group>"; };
 		AB1BF9F1FB3C80716648E50FF1ACE042 /* PlainPing-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PlainPing-umbrella.h"; sourceTree = "<group>"; };
+		ABFB872B5B71350EA2911C1F585282B1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B198F88434B33461E59A0D087B432877 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		BD6D0FF6493C6C0AB5A8659528B8FA87 /* Pods-PingingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PingingApp.release.xcconfig"; sourceTree = "<group>"; };
 		C0FECA861EFD74081103EE44D970E5E0 /* Pods-PingingApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PingingApp-Info.plist"; sourceTree = "<group>"; };
 		CBCE6D7B80DF124E942A8264D6C0BAF1 /* PlainPing.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PlainPing.modulemap; sourceTree = "<group>"; };
+		CE3B0FE300F6E729D2A8E85495CBE6A8 /* ICMP.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ICMP.swift; sourceTree = "<group>"; };
 		D76523AAA325A76373BBF58F4073E07C /* Pods-PingingApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PingingApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		E1767790BC0D8F6DBE657EC62619F949 /* PlainPing-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PlainPing-Info.plist"; sourceTree = "<group>"; };
+		E932FDEDEC8878D5DB1DC1B5A52DC7E6 /* SwiftPing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftPing.framework; path = SwiftPing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3A209F9804188BEB1F0E473E0693B3 /* SwiftPing-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftPing-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		60E8815F1A4C16EED3F05913A2DBEE7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF967FEABD133263CB9BED7E883F8AB1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		70603C203AB1F67FBAA7E39599EBFA8A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,11 +104,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A22B20AC0E29E686F7D180AD2E316CBA /* Frameworks */ = {
+		E08F94C44141E7AA2B72C9550D0A519A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75B3F7E1856EACAE548FB0757154D0C2 /* Foundation.framework in Frameworks */,
+				1D59E3DE2062CECEB9F12E79CAC9D69A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +154,26 @@
 			path = "Target Support Files/Pods-PingingApp";
 			sourceTree = "<group>";
 		};
+		2AB406B05AEB2AB02E454E30504A83B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3ED574968BE27885595B8D81F11A725B /* PlainPing.framework */,
+				810ED53B99857085E0A881299288756D /* Pods_PingingApp.framework */,
+				E932FDEDEC8878D5DB1DC1B5A52DC7E6 /* SwiftPing.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32850D9FA00C080C0B9F80E387C90832 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B198F88434B33461E59A0D087B432877 /* LICENSE */,
+				ABFB872B5B71350EA2911C1F585282B1 /* README.md */,
+				380FAD4F5A51AA4569554E46D197B450 /* SwiftPing.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		42EE010FEDB20D4A66E891960C8F5E98 /* PlainPing */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,12 +187,54 @@
 			path = PlainPing;
 			sourceTree = "<group>";
 		};
+		4DFEB911E1057429E4F9FDF44796EA14 /* SwiftPing */ = {
+			isa = PBXGroup;
+			children = (
+				BFE091EC9BB5951F46462ED1B40E9EC3 /* iOS */,
+				32850D9FA00C080C0B9F80E387C90832 /* Pod */,
+				5B2C978B859973239A876B87D609447A /* Shared */,
+				CFF43005F50E928743B79486CA5BA957 /* Support Files */,
+			);
+			name = SwiftPing;
+			path = ../SwiftPing;
+			sourceTree = "<group>";
+		};
+		52AE37FCF901FB1773E8D8353AD2E40F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DFEB911E1057429E4F9FDF44796EA14 /* SwiftPing */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		5B2C978B859973239A876B87D609447A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CE3B0FE300F6E729D2A8E85495CBE6A8 /* ICMP.swift */,
+				6D4629905A7D428C11F1EFFA1F793562 /* PingConfiguration.swift */,
+				069751859114E7F0EE12395B0800994B /* PingResponse.swift */,
+				7E5470D035A5F6EC178CD3A9F9B44A9C /* Shared.swift */,
+				79B94E7DE6AC49F65C28F6A8603CD327 /* SwiftPing.swift */,
+			);
+			name = Shared;
+			path = Sources/Shared;
+			sourceTree = "<group>";
+		};
 		5F218CA64A7F4CCAD331FF2053D31131 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				18BE13EC618CE804CD2547B5D4EFDCEB /* Pods-PingingApp */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BFE091EC9BB5951F46462ED1B40E9EC3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				328A1994AB8A1620227EED33460D76BD /* iOS.swift */,
+			);
+			name = iOS;
+			path = Sources/iOS;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -147,11 +249,26 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				52AE37FCF901FB1773E8D8353AD2E40F /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				0BD13AD4B3F4C95990AD7426EF9218A7 /* Pods */,
-				DAFC9BC096C2E409D63DC6DEC0962DD9 /* Products */,
+				2AB406B05AEB2AB02E454E30504A83B3 /* Products */,
 				5F218CA64A7F4CCAD331FF2053D31131 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		CFF43005F50E928743B79486CA5BA957 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A84B779F46D06DDAC99651D7F15EB4C1 /* SwiftPing.modulemap */,
+				0CF6152C69DFE84CA8F6921A212DB178 /* SwiftPing.xcconfig */,
+				640541655018C22E87F2AE8FCFFFCF6D /* SwiftPing-dummy.m */,
+				00043FE0C68484EA525131F602D3D4EB /* SwiftPing-Info.plist */,
+				2B59C078070148CA84F843ABA0AAD899 /* SwiftPing-prefix.pch */,
+				FA3A209F9804188BEB1F0E473E0693B3 /* SwiftPing-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Pods/Target Support Files/SwiftPing";
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -162,23 +279,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DAFC9BC096C2E409D63DC6DEC0962DD9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3ED574968BE27885595B8D81F11A725B /* PlainPing.framework */,
-				810ED53B99857085E0A881299288756D /* Pods_PingingApp.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		51E93672A0A96DAB9F581265CE579594 /* Headers */ = {
+		5D048DF8C85B91F77CC9E1E69E3E311E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E2DEE855BBCC2080F8915E2012A645D /* Pods-PingingApp-umbrella.h in Headers */,
+				E85AF1CABA37B27D32E58013332CB2AF /* Pods-PingingApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,26 +299,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A43DBBCDD4CBCAE173149B2BA4E9FB54 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4BD5EC6967FCBCB500077BF7F57C766 /* SwiftPing-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		75992CFB612A9B5E340B746C710BC330 /* Pods-PingingApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CAB00EA16366A14E1B3660ABBBC1BE1B /* Build configuration list for PBXNativeTarget "Pods-PingingApp" */;
+			buildConfigurationList = 5EB8E18A48FBCC65411DD51A1CDB34F3 /* Build configuration list for PBXNativeTarget "Pods-PingingApp" */;
 			buildPhases = (
-				51E93672A0A96DAB9F581265CE579594 /* Headers */,
-				445E3F27ED9A0414438406D782DA691F /* Sources */,
-				A22B20AC0E29E686F7D180AD2E316CBA /* Frameworks */,
-				101592EC373DD80D67AA0D58FBC19CDB /* Resources */,
+				5D048DF8C85B91F77CC9E1E69E3E311E /* Headers */,
+				72B2E8908A1CB7333302217410A3048A /* Sources */,
+				E08F94C44141E7AA2B72C9550D0A519A /* Frameworks */,
+				2B52F8CA0296219876715956E75663BE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9884018062BC6F2F6F73913589DB8932 /* PBXTargetDependency */,
+				4190B7ABE88F3719A69DE3BAD5C99CA8 /* PBXTargetDependency */,
+				C1AC43606EB72F915064616CE23B8F0F /* PBXTargetDependency */,
 			);
 			name = "Pods-PingingApp";
 			productName = "Pods-PingingApp";
 			productReference = 810ED53B99857085E0A881299288756D /* Pods_PingingApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8CBB642B03D9B0149B80AC23FCDEFD66 /* SwiftPing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7ECAAF10718F2E91C6A8FE56EE5A3A6 /* Build configuration list for PBXNativeTarget "SwiftPing" */;
+			buildPhases = (
+				A43DBBCDD4CBCAE173149B2BA4E9FB54 /* Headers */,
+				40BB309045F495A24BE960FC455E5865 /* Sources */,
+				60E8815F1A4C16EED3F05913A2DBEE7C /* Frameworks */,
+				5BC3F929C8151DFDEFF33D8D58DAC298 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftPing;
+			productName = SwiftPing;
+			productReference = E932FDEDEC8878D5DB1DC1B5A52DC7E6 /* SwiftPing.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A909701FDE4A7A9692E3DCF5B2CBBC02 /* PlainPing */ = {
@@ -249,18 +384,26 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = DAFC9BC096C2E409D63DC6DEC0962DD9 /* Products */;
+			productRefGroup = 2AB406B05AEB2AB02E454E30504A83B3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				A909701FDE4A7A9692E3DCF5B2CBBC02 /* PlainPing */,
 				75992CFB612A9B5E340B746C710BC330 /* Pods-PingingApp */,
+				8CBB642B03D9B0149B80AC23FCDEFD66 /* SwiftPing */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		101592EC373DD80D67AA0D58FBC19CDB /* Resources */ = {
+		2B52F8CA0296219876715956E75663BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BC3F929C8151DFDEFF33D8D58DAC298 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -277,11 +420,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		445E3F27ED9A0414438406D782DA691F /* Sources */ = {
+		40BB309045F495A24BE960FC455E5865 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0814ED096380351141131F2C31A8431 /* Pods-PingingApp-dummy.m in Sources */,
+				F08C5B0B1A890F884FF463ABC62BA0A2 /* ICMP.swift in Sources */,
+				26E03A1EBA240055EAA0CB04C5DD161B /* iOS.swift in Sources */,
+				4987C36F8784126696A869FB8FF3DA4A /* PingConfiguration.swift in Sources */,
+				786E46FB999FD35B398BF645A2C8A739 /* PingResponse.swift in Sources */,
+				1F80BB3715C67FA51CD73DE4EBFCAA70 /* Shared.swift in Sources */,
+				B10A8A87DF14DB313D7721E440F1B50A /* SwiftPing-dummy.m in Sources */,
+				AC8D9AF54D4F4F5CB4D3537B582A8C9D /* SwiftPing.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72B2E8908A1CB7333302217410A3048A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C63EAC9C3F1A58598BB4477B6FAFFD8F /* Pods-PingingApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,20 +456,25 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9884018062BC6F2F6F73913589DB8932 /* PBXTargetDependency */ = {
+		4190B7ABE88F3719A69DE3BAD5C99CA8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PlainPing;
 			target = A909701FDE4A7A9692E3DCF5B2CBBC02 /* PlainPing */;
-			targetProxy = 0EBD08800245BA874C2B19837D28E7E7 /* PBXContainerItemProxy */;
+			targetProxy = 59A54243123E3A5C43E8898095E0FA89 /* PBXContainerItemProxy */;
+		};
+		C1AC43606EB72F915064616CE23B8F0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftPing;
+			target = 8CBB642B03D9B0149B80AC23FCDEFD66 /* SwiftPing */;
+			targetProxy = 3D234D1945BE108EA3BE98B4954AD8D0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		287CDD27B407A0219EE8150B28DFF360 /* Release */ = {
+		335319B71FE97C556E039602E051C10F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD6D0FF6493C6C0AB5A8659528B8FA87 /* Pods-PingingApp.release.xcconfig */;
+			baseConfigurationReference = 0CF6152C69DFE84CA8F6921A212DB178 /* SwiftPing.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -322,23 +484,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PingingApp/Pods-PingingApp-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftPing/SwiftPing-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftPing/SwiftPing-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PingingApp/Pods-PingingApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/SwiftPing/SwiftPing.modulemap";
+				PRODUCT_MODULE_NAME = SwiftPing;
+				PRODUCT_NAME = SwiftPing;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -505,7 +666,80 @@
 			};
 			name = Debug;
 		};
-		C0CDE260A80CD8792194B1F72C60FA01 /* Debug */ = {
+		96F6A49118B72CF3EB9A51B013F868A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD6D0FF6493C6C0AB5A8659528B8FA87 /* Pods-PingingApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PingingApp/Pods-PingingApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PingingApp/Pods-PingingApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9BDFB82F685EAC653A31D888C89F79B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CF6152C69DFE84CA8F6921A212DB178 /* SwiftPing.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftPing/SwiftPing-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftPing/SwiftPing-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftPing/SwiftPing.modulemap";
+				PRODUCT_MODULE_NAME = SwiftPing;
+				PRODUCT_NAME = SwiftPing;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3231D4D8615E452E96B55CB099A9C4E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5F093BABA3E6A9CAFE715EBE1A589593 /* Pods-PingingApp.debug.xcconfig */;
 			buildSettings = {
@@ -590,6 +824,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		5EB8E18A48FBCC65411DD51A1CDB34F3 /* Build configuration list for PBXNativeTarget "Pods-PingingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3231D4D8615E452E96B55CB099A9C4E /* Debug */,
+				96F6A49118B72CF3EB9A51B013F868A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B9BED3F20A3406171ED84462A53D2B31 /* Build configuration list for PBXNativeTarget "PlainPing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -599,11 +842,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CAB00EA16366A14E1B3660ABBBC1BE1B /* Build configuration list for PBXNativeTarget "Pods-PingingApp" */ = {
+		F7ECAAF10718F2E91C6A8FE56EE5A3A6 /* Build configuration list for PBXNativeTarget "SwiftPing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C0CDE260A80CD8792194B1F72C60FA01 /* Debug */,
-				287CDD27B407A0219EE8150B28DFF360 /* Release */,
+				9BDFB82F685EAC653A31D888C89F79B0 /* Debug */,
+				335319B71FE97C556E039602E051C10F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
