@@ -94,7 +94,9 @@ public class SwiftPing: NSObject {
         print(queue)
         DispatchQueue.global().async{
             var error:NSError?;
-            let ipv4Address:Data? = getIPv4AddressFromHost(host:host, error: &error)
+            let ipv4Address:Data? = host.data(using: .ascii)
+            
+            print(ipv4Address!)
             
             queue.async {
                 if (error != nil) {
@@ -173,7 +175,7 @@ public class SwiftPing: NSObject {
         self.currentQueue = queue
         
         let socketAddress:sockaddr_in = (ipv4Address as NSData).bytes.assumingMemoryBound(to: sockaddr_in.self).pointee
-        self.ip = String(cString: inet_ntoa(socketAddress.sin_addr), encoding: String.Encoding.ascii)!
+        self.ip = self.host
         
         
         var context = CFSocketContext()
@@ -314,7 +316,7 @@ public class SwiftPing: NSObject {
         if !ICMPExtractResponseFromData(data: data! as NSData, ipHeaderData: &ipHeaderData, ipData: &ipData, icmpHeaderData: &icmpHeaderData, icmpData: &icmpData) {
             
             print("ICMPExtractResponseFromData")
-            if (ipHeaderData != nil && self.ip == extractIPAddressBlock()) {
+            if (ipHeaderData != nil && self.ip == self.host) {
                 return
             }
         }

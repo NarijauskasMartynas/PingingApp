@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6B7584481DA387B27AC8B851 /* Pods_PingingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45D0F61D8C7D85CD2783D76 /* Pods_PingingApp.framework */; };
-		C70495F02376DAB60075B7DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70495EF2376DAB60075B7DC /* AppDelegate.swift */; };
 		C70495F22376DAB60075B7DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70495F12376DAB60075B7DC /* SceneDelegate.swift */; };
 		C70495F42376DAB60075B7DC /* IpListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70495F32376DAB60075B7DC /* IpListViewController.swift */; };
 		C70495F72376DAB70075B7DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70495F52376DAB70075B7DC /* Main.storyboard */; };
@@ -16,6 +15,8 @@
 		C70495FC2376DABA0075B7DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70495FA2376DABA0075B7DC /* LaunchScreen.storyboard */; };
 		C76EB9DC237ABC95008F7695 /* Pinger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EB9DB237ABC95008F7695 /* Pinger.swift */; };
 		C76EB9DE237AD0AB008F7695 /* SwiftyPing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EB9DD237AD0AB008F7695 /* SwiftyPing.swift */; };
+		C7D76D0C238175E00027841B /* ObjCPinger.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D76D0B238175E00027841B /* ObjCPinger.m */; };
+		C7D76D10238179D30027841B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D76D0F238179D30027841B /* AppDelegate.swift */; };
 		C7EA5BD52376F9EE00CB83E8 /* IpGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA5BD42376F9EE00CB83E8 /* IpGetter.swift */; };
 		C7EA5BD72377075A00CB83E8 /* Ip.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA5BD62377075A00CB83E8 /* Ip.swift */; };
 /* End PBXBuildFile section */
@@ -24,7 +25,6 @@
 		1EF58EE20F1453A32475A28B /* Pods-PingingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingingApp.release.xcconfig"; path = "Target Support Files/Pods-PingingApp/Pods-PingingApp.release.xcconfig"; sourceTree = "<group>"; };
 		C45D0F61D8C7D85CD2783D76 /* Pods_PingingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PingingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70495EC2376DAB60075B7DC /* PingingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PingingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C70495EF2376DAB60075B7DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C70495F12376DAB60075B7DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C70495F32376DAB60075B7DC /* IpListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpListViewController.swift; sourceTree = "<group>"; };
 		C70495F62376DAB70075B7DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -33,7 +33,10 @@
 		C70495FD2376DABA0075B7DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C76EB9DB237ABC95008F7695 /* Pinger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pinger.swift; sourceTree = "<group>"; };
 		C76EB9DD237AD0AB008F7695 /* SwiftyPing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyPing.swift; sourceTree = "<group>"; };
-		C7EA5BD32376F93400CB83E8 /* PingingApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PingingApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		C7D76D0B238175E00027841B /* ObjCPinger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCPinger.m; sourceTree = "<group>"; };
+		C7D76D0D2381767F0027841B /* PingingApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PingingApp-Bridging-Header.h"; path = "/Users/martynasn/Desktop/PingingApp/PingingApp/PingingApp/PingingApp-Bridging-Header.h"; sourceTree = "<absolute>"; };
+		C7D76D0E2381773F0027841B /* ObjCPinger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCPinger.h; sourceTree = "<group>"; };
+		C7D76D0F238179D30027841B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7EA5BD42376F9EE00CB83E8 /* IpGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpGetter.swift; sourceTree = "<group>"; };
 		C7EA5BD62377075A00CB83E8 /* Ip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ip.swift; sourceTree = "<group>"; };
 		F3762F7F00C853DD5580C169 /* Pods-PingingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingingApp.debug.xcconfig"; path = "Target Support Files/Pods-PingingApp/Pods-PingingApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,12 +95,14 @@
 				C7862D6F237710FA004A167C /* Controller */,
 				C7862D6E237710F1004A167C /* View */,
 				C7862D6D237710E0004A167C /* Model */,
-				C7EA5BD32376F93400CB83E8 /* PingingApp-Bridging-Header.h */,
-				C70495EF2376DAB60075B7DC /* AppDelegate.swift */,
 				C70495F12376DAB60075B7DC /* SceneDelegate.swift */,
 				C70495F82376DABA0075B7DC /* Assets.xcassets */,
 				C70495FA2376DABA0075B7DC /* LaunchScreen.storyboard */,
 				C70495FD2376DABA0075B7DC /* Info.plist */,
+				C7D76D0F238179D30027841B /* AppDelegate.swift */,
+				C7D76D0D2381767F0027841B /* PingingApp-Bridging-Header.h */,
+				C7D76D0B238175E00027841B /* ObjCPinger.m */,
+				C7D76D0E2381773F0027841B /* ObjCPinger.h */,
 			);
 			path = PingingApp;
 			sourceTree = "<group>";
@@ -140,7 +145,7 @@
 				C70495E82376DAB60075B7DC /* Sources */,
 				C70495E92376DAB60075B7DC /* Frameworks */,
 				C70495EA2376DAB60075B7DC /* Resources */,
-				5F0CFD9135CB85715BFD3D7D /* [CP] Embed Pods Frameworks */,
+				0ECE4A5F86CFB2D8EA14A947 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,6 +168,7 @@
 				TargetAttributes = {
 					C70495EB2376DAB60075B7DC = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -198,7 +204,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5F0CFD9135CB85715BFD3D7D /* [CP] Embed Pods Frameworks */ = {
+		0ECE4A5F86CFB2D8EA14A947 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -244,12 +250,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D76D10238179D30027841B /* AppDelegate.swift in Sources */,
 				C76EB9DC237ABC95008F7695 /* Pinger.swift in Sources */,
 				C70495F42376DAB60075B7DC /* IpListViewController.swift in Sources */,
 				C7EA5BD52376F9EE00CB83E8 /* IpGetter.swift in Sources */,
 				C76EB9DE237AD0AB008F7695 /* SwiftyPing.swift in Sources */,
-				C70495F02376DAB60075B7DC /* AppDelegate.swift in Sources */,
 				C7EA5BD72377075A00CB83E8 /* Ip.swift in Sources */,
+				C7D76D0C238175E00027841B /* ObjCPinger.m in Sources */,
 				C70495F22376DAB60075B7DC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,6 +402,7 @@
 			baseConfigurationReference = F3762F7F00C853DD5580C169 /* Pods-PingingApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5ZKQTJL4C8;
 				INFOPLIST_FILE = PingingApp/Info.plist;
@@ -404,6 +412,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Martynq.PingingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PingingApp/PingingApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -414,6 +424,7 @@
 			baseConfigurationReference = 1EF58EE20F1453A32475A28B /* Pods-PingingApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5ZKQTJL4C8;
 				INFOPLIST_FILE = PingingApp/Info.plist;
@@ -423,6 +434,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Martynq.PingingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PingingApp/PingingApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -1,23 +1,16 @@
 PODS:
-  - PlainPing (0.5)
-  - SwiftPing (1.1.1)
+  - GBPing (1.5.1)
 
 DEPENDENCIES:
-  - PlainPing
-  - SwiftPing (from `SwiftPing`)
+  - GBPing
 
 SPEC REPOS:
   trunk:
-    - PlainPing
-
-EXTERNAL SOURCES:
-  SwiftPing:
-    :path: SwiftPing
+    - GBPing
 
 SPEC CHECKSUMS:
-  PlainPing: 6b248b94d92be7ec0410952d1b09af43b9a39015
-  SwiftPing: 9b444bde61c3f9272a51fabc1aa08eee03c986d1
+  GBPing: d7fb1b91990f1d2a0f07f72e0fe79e91ee9fc3ba
 
-PODFILE CHECKSUM: af303226a019c2d0c768e29f7e870990d291e8f0
+PODFILE CHECKSUM: 38c09c497e834e3739ca2912127e5a7151153a89
 
 COCOAPODS: 1.8.4

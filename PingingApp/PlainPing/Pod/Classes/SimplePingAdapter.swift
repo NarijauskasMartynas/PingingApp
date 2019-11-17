@@ -34,11 +34,14 @@ class SimplePingAdapter: NSObject, SimplePingDelegate {
         if let pinger = pinger {
             pinger.stop()
         }
+        pinger = nil
         
         if timeoutTimer != nil {
             timeoutTimer?.invalidate()
             timeoutTimer = nil
         }
+        
+        delegate = nil
     }
     
     @objc func timeout() {

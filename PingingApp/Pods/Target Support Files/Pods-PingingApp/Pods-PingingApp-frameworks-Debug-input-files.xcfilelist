@@ -1,3 +1,2 @@
 ${PODS_ROOT}/Target Support Files/Pods-PingingApp/Pods-PingingApp-frameworks.sh
-${BUILT_PRODUCTS_DIR}/PlainPing/PlainPing.framework
-${BUILT_PRODUCTS_DIR}/SwiftPing/SwiftPing.framework
+${BUILT_PRODUCTS_DIR}/GBPing/GBPing.framework

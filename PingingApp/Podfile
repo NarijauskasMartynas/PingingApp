@@ -6,6 +6,8 @@ target 'PingingApp' do
   use_frameworks!
 
   # Pods for PingingApp
-  pod 'PlainPing'
-  pod 'SwiftPing', :path => 'SwiftPing'
+  #pod 'PlainPing', :path => 'PlainPing'
+  #pod 'SwiftPing', :path => 'SwiftPing'
+ # pod 'ReachabilitySwift'
+  pod 'GBPing'
 end
