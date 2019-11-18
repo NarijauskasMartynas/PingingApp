@@ -10,7 +10,7 @@ import Foundation
 import GBPing
 
 protocol UpdateIpListDelegate{
-    func updateTableView()
+    func updateUI()
 }
 
 class Pinger : NSObject, GBPingDelegate {
@@ -18,19 +18,17 @@ class Pinger : NSObject, GBPingDelegate {
     private let NUMBER_OF_PINGS : Int = 3
     private let NUMBER_OF_IP : Int = 255
     
-    var delegate : UpdateIpListDelegate?
-    
-    var isStopped = true
     private var initialIpArray : [String] = []
-    var ipObjArray : [Ip] = []
 
+    public var delegate : UpdateIpListDelegate?
+    public var ipObjArray : [Ip] = []
+    public var isStopped = true
     
     func generateIpAddresses(startingAddress: String){
         for i in 1...NUMBER_OF_IP{
             let currentAddr = "\(startingAddress)\(i)"
             initialIpArray.append(currentAddr)
         }
-        print("Pradinio dydis: \(initialIpArray.count)")
     }
 
         // Do any additional setup after loading the view, typically from a nib.
@@ -43,14 +41,20 @@ class Pinger : NSObject, GBPingDelegate {
     }
     
     func mockPing(currentIndex: Int){
+        if isStopped{
+            return
+        }
+        
         if initialIpArray.count <= currentIndex{
-                return
-            }
+            isStopped = true
+            return
+        }
+        
         let ipObj = Ip()
             //imitation of ping
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-            print("inside")
             if self.initialIpArray.count <= currentIndex{
+                self.isStopped = true
                 return
             }
             ipObj.ipAddress = self.initialIpArray[currentIndex]
@@ -58,7 +62,7 @@ class Pinger : NSObject, GBPingDelegate {
             
             self.ipObjArray.append(ipObj)
             self.initialIpArray.remove(at: currentIndex)
-            self.delegate?.updateTableView()
+            self.delegate?.updateUI()
             self.mockPing(currentIndex: currentIndex)
         }
        

@@ -13,8 +13,6 @@ import GBPing
 class IpListViewController: UITableViewController, UpdateIpListDelegate {
     @IBOutlet weak var StartButton: UIBarButtonItem!
     @IBOutlet weak var ProgressView: UIProgressView!
-
-    private var ipAddress : String = ""
     
     private var pinger : Pinger = Pinger()
     
@@ -22,15 +20,11 @@ class IpListViewController: UITableViewController, UpdateIpListDelegate {
         super.viewDidLoad()
 
         let ipGetter = IpGetter()
-        ipAddress = ipGetter.getIPAddress()
+        let ipAddress = ipGetter.getIPAddress()
         pinger.generateIpAddresses(startingAddress: ipAddress)
         pinger.delegate = self
-//        DispatchQueue.concurrentPerform(iterations: 10) { (int) in
-//
-//        }
     }
-    
-    
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return pinger.ipObjArray.count
     }
@@ -50,27 +44,41 @@ class IpListViewController: UITableViewController, UpdateIpListDelegate {
         return cell
     }
     @IBAction func SortTapped(_ sender: UIBarButtonItem) {
-        print(pinger.ipObjArray.count)
-        tableView.reloadData()
+        let alert = UIAlertController(title: "Sort type", message: "Select your sorting type", preferredStyle: .actionSheet)
+
+        let sortByIp = UIAlertAction(title: "Sort by IP", style: .default) { (_) in
+            self.pinger.ipObjArray.sort {$0.ipAddress > $1.ipAddress}
+            self.tableView.reloadData()
+        }
+        
+        let sortByReachability = UIAlertAction(title: "Sort by reachability", style: .default) { (_) in
+            self.pinger.ipObjArray.sort {$0.reachable && !$1.reachable}
+            self.tableView.reloadData()
+        }
+        
+        alert.addAction(sortByIp)
+        alert.addAction(sortByReachability)
+        
+        present(alert, animated: true, completion: nil)
     }
     
     @IBAction func startPinging(_ sender: UIBarButtonItem) {
-//        if pinger.isStopped{
-//            pinger.isStopped = false
-//            pinger.startPinging()
-//            StartButton.title = "Stop"
-//        }
-//        else{
-//            StartButton.title = "Start"
-//            pinger.isStopped = true
-//            tableView.reloadData()
-//        }
+        if pinger.isStopped{
+            pinger.isStopped = false
+            pinger.startPinging()
+            StartButton.title = "Stop"
+        }
+        else{
+            StartButton.title = "Start"
+            pinger.isStopped = true
+        }
         pinger.startPinging()
     }
     
-    func updateTableView() {
-        print("Lalala")
+    func updateUI() {
+        ProgressView.setProgress(Float(pinger.ipObjArray.count) / Float(255), animated: true)
         tableView.reloadData()
+        StartButton.title = pinger.isStopped ? "Start" : "Stop"
     }
 
 }
