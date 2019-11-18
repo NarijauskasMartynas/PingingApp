@@ -7,142 +7,156 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C915B5BAD58DF96783C1327329C9555 /* Pods-PingingApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 48B63C5ABCD1630D1A8A626933F95C14 /* Pods-PingingApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		48CC9185CEDCA04CE790AD88AB786658 /* GBPingSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = D36D44BD80E018D37748DFB19D04D607 /* GBPingSummary.m */; };
-		60AB1B87D74A7A0DEDC258FED34138D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		681B8EC39D52C43E1A7CA2B4434C7773 /* GBPing.h in Headers */ = {isa = PBXBuildFile; fileRef = BA786110D4AC6DECA796C18245B1C2B6 /* GBPing.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		88B73C216D282BB01FF58E520DB18462 /* GBPing-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16CCC60EF38B110EE7A7416F573A5EB9 /* GBPing-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		899C3EE001D0BD8ECB1B3D8509B31D45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		9785CF095F4274425C4817E65CC64318 /* GBPingSummary.h in Headers */ = {isa = PBXBuildFile; fileRef = B4BC8353A9E530B666365A099F7CBBC3 /* GBPingSummary.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9B994EBC655301F49C20383317CA5667 /* Pods-PingingApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3132DAEC136ADDDBA955FFDAE7C6ACC1 /* Pods-PingingApp-dummy.m */; };
-		C12D183B4E6B22EA29010EEBAC7312F0 /* GBPing.m in Sources */ = {isa = PBXBuildFile; fileRef = D8516D3890FB6F75C3EDF8125CABC226 /* GBPing.m */; };
-		CCA99B3E1AB0338B4854AB7779711672 /* ICMPHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 6118124F813C22D12DAAE1E7807C59F0 /* ICMPHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EAA28005C700FDD22923A44AECF16848 /* GBPing-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 504B21732EE1F566693F6F41D85E02D1 /* GBPing-dummy.m */; };
+		050B008281C4DBD4A79184F5C581FA6D /* Pods-PingingAppUnitTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC4B12F20E87CC21A4230D6552CBC03 /* Pods-PingingAppUnitTests-dummy.m */; };
+		06B1523D613C99C03B121770A35B99EF /* GBPing.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E9FB1B7B09BC3EACAED93A9D5B6E80 /* GBPing.m */; };
+		0945E6863E95150D751EE51D082615ED /* GBPingSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 3546FB5799C42CC65B606A22CA860D44 /* GBPingSummary.m */; };
+		2B7E7C63FF0B3A1EB0A9977896CEEBB8 /* ICMPHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B4B0E701A315A2709B13A27AD1AC0ED /* ICMPHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B5A21087C57854A3F2D8AEE3E1F2541 /* Pods-PingingApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A08C7D0B341A7530A71481E43AF33B /* Pods-PingingApp-dummy.m */; };
+		4151F9C9EDEF28D04DD1D0920D0ACF6C /* GBPingSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 3546FB5799C42CC65B606A22CA860D44 /* GBPingSummary.m */; };
+		51CEFFA3FEDF17F5AB2FA867155A672C /* ICMPHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B4B0E701A315A2709B13A27AD1AC0ED /* ICMPHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5C6AC4FE37EF9F2CD2A58839F4F69947 /* GBPing-framework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE32A6A5547AFA62E1B9569C5431352 /* GBPing-framework-dummy.m */; };
+		5F4D060C36040C80EC023D5E7E68AC1D /* GBPingSummary.h in Headers */ = {isa = PBXBuildFile; fileRef = EECD16F8C4E99637AC3045EA09677A13 /* GBPingSummary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		619B3CB29779A1337ED8001F51464ED5 /* GBPingSummary.h in Headers */ = {isa = PBXBuildFile; fileRef = EECD16F8C4E99637AC3045EA09677A13 /* GBPingSummary.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6CE158F62FBC1288A627696FAE6AC3E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		76C369E431F8F93D5A3827F60A5937AD /* GBPing.h in Headers */ = {isa = PBXBuildFile; fileRef = B6DC986D18A0630ACA6D4C59AD8A00B7 /* GBPing.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		779E8C92B0E1EA0CED3B6BFFFD37E4E9 /* GBPing.h in Headers */ = {isa = PBXBuildFile; fileRef = B6DC986D18A0630ACA6D4C59AD8A00B7 /* GBPing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAD6394A0B62A59823E84024E321DD9E /* GBPing-framework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BFD2FDF1070F09CFC71570C4A00E28B8 /* GBPing-framework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE2DF655C9ED9B49125411D4FB5C02B7 /* Pods-PingingApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 382B176B597EA5962C6E5E9F12289DB0 /* Pods-PingingApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3914170F617DE0B2A3F4ACF0C65D4BB /* GBPing-library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 275109B0CCC9533BF7DBB476CFF9ECAE /* GBPing-library-dummy.m */; };
+		DF84A6CAA13F8F79CD131F5EC1C0E724 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		F7AD8CD66B4C221DB57B5E32155FD794 /* GBPing.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E9FB1B7B09BC3EACAED93A9D5B6E80 /* GBPing.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3521C142D83A22F3C1FE80051C1FF126 /* PBXContainerItemProxy */ = {
+		721CFBF2CF0671692DA12CEDA848317C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B75B4785F3A4E5A5455B1AC0DE538064;
-			remoteInfo = GBPing;
+			remoteGlobalIDString = 58F2791739628E89246F9B9E5724C76F;
+			remoteInfo = "GBPing-library";
+		};
+		F9CF0A821349FDAAA7EBC9D96C540106 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71D299408EA767132A330DA580ECAE9D;
+			remoteInfo = "GBPing-framework";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		16CCC60EF38B110EE7A7416F573A5EB9 /* GBPing-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GBPing-umbrella.h"; sourceTree = "<group>"; };
-		17472DEC6746B1D9C8355E63AFE9B790 /* Pods-PingingApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PingingApp-frameworks.sh"; sourceTree = "<group>"; };
-		3132DAEC136ADDDBA955FFDAE7C6ACC1 /* Pods-PingingApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PingingApp-dummy.m"; sourceTree = "<group>"; };
+		062907EE68CCB25F253485568E817C06 /* Pods-PingingAppUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PingingAppUnitTests.release.xcconfig"; sourceTree = "<group>"; };
+		0C1298677C655F0625CC23C1865CA944 /* GBPing-library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "GBPing-library.xcconfig"; path = "../GBPing-library/GBPing-library.xcconfig"; sourceTree = "<group>"; };
+		1CF0B6566B0F8B482ECF21AF64A65631 /* GBPing-framework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "GBPing-framework.modulemap"; sourceTree = "<group>"; };
+		275109B0CCC9533BF7DBB476CFF9ECAE /* GBPing-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GBPing-library-dummy.m"; path = "../GBPing-library/GBPing-library-dummy.m"; sourceTree = "<group>"; };
+		2D6CA0915F249BBDFCD351DD8C517438 /* Pods-PingingAppUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PingingAppUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2EE32A6A5547AFA62E1B9569C5431352 /* GBPing-framework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GBPing-framework-dummy.m"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		44A3F2F29481E66C74757EFC3701B5F9 /* GBPing.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GBPing.modulemap; sourceTree = "<group>"; };
-		48B63C5ABCD1630D1A8A626933F95C14 /* Pods-PingingApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PingingApp-umbrella.h"; sourceTree = "<group>"; };
-		504B21732EE1F566693F6F41D85E02D1 /* GBPing-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GBPing-dummy.m"; sourceTree = "<group>"; };
-		5F093BABA3E6A9CAFE715EBE1A589593 /* Pods-PingingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PingingApp.debug.xcconfig"; sourceTree = "<group>"; };
-		6118124F813C22D12DAAE1E7807C59F0 /* ICMPHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ICMPHeader.h; path = GBPing/ICMPHeader.h; sourceTree = "<group>"; };
-		7F83A470BFE1CFC26FEFE5C587456D65 /* Pods-PingingApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PingingApp.modulemap"; sourceTree = "<group>"; };
+		3546FB5799C42CC65B606A22CA860D44 /* GBPingSummary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GBPingSummary.m; path = GBPing/GBPingSummary.m; sourceTree = "<group>"; };
+		382B176B597EA5962C6E5E9F12289DB0 /* Pods-PingingApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PingingApp-umbrella.h"; sourceTree = "<group>"; };
+		3A54ED1DE33CE06EBE7CC6B32EF92DD5 /* GBPing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GBPing.framework; path = "GBPing-framework.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42908D8F44EEA78D5FBCDDD85E0D2BB4 /* Pods-PingingApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PingingApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		47588CA74092C748A500BF4A7F3A4EBA /* libPods-PingingAppUnitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-PingingAppUnitTests.a"; path = "libPods-PingingAppUnitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4840197FE4236C0659C6E6B83848BE22 /* GBPing-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GBPing-library-prefix.pch"; path = "../GBPing-library/GBPing-library-prefix.pch"; sourceTree = "<group>"; };
+		4ACEF192A2E2F7B13A85AFE130B48AC8 /* Pods-PingingApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PingingApp.modulemap"; sourceTree = "<group>"; };
+		4AE657F61AA4F5696AEE628E239642B1 /* Pods-PingingApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PingingApp-Info.plist"; sourceTree = "<group>"; };
+		56E9FB1B7B09BC3EACAED93A9D5B6E80 /* GBPing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GBPing.m; path = GBPing/GBPing.m; sourceTree = "<group>"; };
+		6B4B0E701A315A2709B13A27AD1AC0ED /* ICMPHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ICMPHeader.h; path = GBPing/ICMPHeader.h; sourceTree = "<group>"; };
+		6F1C52D7B27F08955A3AB52F20BD6426 /* GBPing-framework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GBPing-framework-prefix.pch"; sourceTree = "<group>"; };
+		710E08ED61DD7ABB768919C5C7601A9E /* GBPing-framework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GBPing-framework-Info.plist"; sourceTree = "<group>"; };
+		79BFFC7A196D72CA5EECACADCB27CE8F /* GBPing-framework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GBPing-framework.xcconfig"; sourceTree = "<group>"; };
 		810ED53B99857085E0A881299288756D /* Pods_PingingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PingingApp.framework; path = "Pods-PingingApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		90B157E68C272626F14E6CBFCF7B925D /* GBPing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GBPing.xcconfig; sourceTree = "<group>"; };
-		96CA9B05D41DE25D70CD1620D9D51D9A /* Pods-PingingApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PingingApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		96A08C7D0B341A7530A71481E43AF33B /* Pods-PingingApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PingingApp-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B100EF3BA09ECD1CEC20597AA8CC9A24 /* GBPing-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GBPing-Info.plist"; sourceTree = "<group>"; };
-		B4BC8353A9E530B666365A099F7CBBC3 /* GBPingSummary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GBPingSummary.h; path = GBPing/GBPingSummary.h; sourceTree = "<group>"; };
-		B53E9041CA92E47FD7EA2AB73757CF38 /* GBPing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GBPing.framework; path = GBPing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA786110D4AC6DECA796C18245B1C2B6 /* GBPing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GBPing.h; path = GBPing/GBPing.h; sourceTree = "<group>"; };
-		BD6D0FF6493C6C0AB5A8659528B8FA87 /* Pods-PingingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PingingApp.release.xcconfig"; sourceTree = "<group>"; };
-		C0FECA861EFD74081103EE44D970E5E0 /* Pods-PingingApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PingingApp-Info.plist"; sourceTree = "<group>"; };
-		D36D44BD80E018D37748DFB19D04D607 /* GBPingSummary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GBPingSummary.m; path = GBPing/GBPingSummary.m; sourceTree = "<group>"; };
-		D36F3A1ED378F977EDCB3518B4AD8498 /* GBPing-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GBPing-prefix.pch"; sourceTree = "<group>"; };
-		D76523AAA325A76373BBF58F4073E07C /* Pods-PingingApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PingingApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		D8516D3890FB6F75C3EDF8125CABC226 /* GBPing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GBPing.m; path = GBPing/GBPing.m; sourceTree = "<group>"; };
+		ACC4B12F20E87CC21A4230D6552CBC03 /* Pods-PingingAppUnitTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PingingAppUnitTests-dummy.m"; sourceTree = "<group>"; };
+		B38DBC208386396C87D668693C4B14E8 /* Pods-PingingAppUnitTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PingingAppUnitTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B6DC986D18A0630ACA6D4C59AD8A00B7 /* GBPing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GBPing.h; path = GBPing/GBPing.h; sourceTree = "<group>"; };
+		BFD2FDF1070F09CFC71570C4A00E28B8 /* GBPing-framework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GBPing-framework-umbrella.h"; sourceTree = "<group>"; };
+		C57CA4C158A857BFFAD849914144276F /* Pods-PingingApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PingingApp-frameworks.sh"; sourceTree = "<group>"; };
+		CD25A37EBF37E6BCD6D83510902DBAAD /* libGBPing-library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libGBPing-library.a"; path = "libGBPing-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7BA183226A1DF70FA0FCBCC9889BC14 /* Pods-PingingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PingingApp.release.xcconfig"; sourceTree = "<group>"; };
+		EB57CFF5E2DD5BB84C26A7C5CF306EB1 /* Pods-PingingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PingingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		EECD16F8C4E99637AC3045EA09677A13 /* GBPingSummary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GBPingSummary.h; path = GBPing/GBPingSummary.h; sourceTree = "<group>"; };
+		F24F519693F8AA2343CBE75656EEB3D1 /* Pods-PingingAppUnitTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PingingAppUnitTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F2A811834248ABF42E7C3F67930FA4F1 /* Pods-PingingApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PingingApp-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BC29E37F446C4543C37AD9C27E86ACC0 /* Frameworks */ = {
+		0394EEA0EAB8194EAC1F5C948DD259F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60AB1B87D74A7A0DEDC258FED34138D2 /* Foundation.framework in Frameworks */,
+				6CE158F62FBC1288A627696FAE6AC3E9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF9AE68BABBC8959849D546DA5BCBAAC /* Frameworks */ = {
+		1A2F546CFEBC8B6CAFB5D51EF61885D5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				899C3EE001D0BD8ECB1B3D8509B31D45 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B6D199A3AA637C11EDF76F5AFB6C57A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3507654D1C2E72CC33AC96F8E51C4EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF84A6CAA13F8F79CD131F5EC1C0E724 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18BE13EC618CE804CD2547B5D4EFDCEB /* Pods-PingingApp */ = {
+		0DD49EAC1FA2840A2B695D3107280AF8 /* GBPing */ = {
 			isa = PBXGroup;
 			children = (
-				7F83A470BFE1CFC26FEFE5C587456D65 /* Pods-PingingApp.modulemap */,
-				96CA9B05D41DE25D70CD1620D9D51D9A /* Pods-PingingApp-acknowledgements.markdown */,
-				D76523AAA325A76373BBF58F4073E07C /* Pods-PingingApp-acknowledgements.plist */,
-				3132DAEC136ADDDBA955FFDAE7C6ACC1 /* Pods-PingingApp-dummy.m */,
-				17472DEC6746B1D9C8355E63AFE9B790 /* Pods-PingingApp-frameworks.sh */,
-				C0FECA861EFD74081103EE44D970E5E0 /* Pods-PingingApp-Info.plist */,
-				48B63C5ABCD1630D1A8A626933F95C14 /* Pods-PingingApp-umbrella.h */,
-				5F093BABA3E6A9CAFE715EBE1A589593 /* Pods-PingingApp.debug.xcconfig */,
-				BD6D0FF6493C6C0AB5A8659528B8FA87 /* Pods-PingingApp.release.xcconfig */,
-			);
-			name = "Pods-PingingApp";
-			path = "Target Support Files/Pods-PingingApp";
-			sourceTree = "<group>";
-		};
-		5F218CA64A7F4CCAD331FF2053D31131 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				18BE13EC618CE804CD2547B5D4EFDCEB /* Pods-PingingApp */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		6B56EC08F99280927669B139E9B849FD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B53E9041CA92E47FD7EA2AB73757CF38 /* GBPing.framework */,
-				810ED53B99857085E0A881299288756D /* Pods_PingingApp.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7825FBA077857A410EA55D7A63BA0DA2 /* GBPing */ = {
-			isa = PBXGroup;
-			children = (
-				BA786110D4AC6DECA796C18245B1C2B6 /* GBPing.h */,
-				D8516D3890FB6F75C3EDF8125CABC226 /* GBPing.m */,
-				B4BC8353A9E530B666365A099F7CBBC3 /* GBPingSummary.h */,
-				D36D44BD80E018D37748DFB19D04D607 /* GBPingSummary.m */,
-				6118124F813C22D12DAAE1E7807C59F0 /* ICMPHeader.h */,
-				79D802AA6A8678C6A05C230996947334 /* Support Files */,
+				B6DC986D18A0630ACA6D4C59AD8A00B7 /* GBPing.h */,
+				56E9FB1B7B09BC3EACAED93A9D5B6E80 /* GBPing.m */,
+				EECD16F8C4E99637AC3045EA09677A13 /* GBPingSummary.h */,
+				3546FB5799C42CC65B606A22CA860D44 /* GBPingSummary.m */,
+				6B4B0E701A315A2709B13A27AD1AC0ED /* ICMPHeader.h */,
+				F9E56284732411B10FD74E40C999C992 /* Support Files */,
 			);
 			name = GBPing;
 			path = GBPing;
 			sourceTree = "<group>";
 		};
-		79D802AA6A8678C6A05C230996947334 /* Support Files */ = {
+		4DCF181C007C02830770F0C9E8FEAA79 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				44A3F2F29481E66C74757EFC3701B5F9 /* GBPing.modulemap */,
-				90B157E68C272626F14E6CBFCF7B925D /* GBPing.xcconfig */,
-				504B21732EE1F566693F6F41D85E02D1 /* GBPing-dummy.m */,
-				B100EF3BA09ECD1CEC20597AA8CC9A24 /* GBPing-Info.plist */,
-				D36F3A1ED378F977EDCB3518B4AD8498 /* GBPing-prefix.pch */,
-				16CCC60EF38B110EE7A7416F573A5EB9 /* GBPing-umbrella.h */,
+				3A54ED1DE33CE06EBE7CC6B32EF92DD5 /* GBPing.framework */,
+				CD25A37EBF37E6BCD6D83510902DBAAD /* libGBPing-library.a */,
+				47588CA74092C748A500BF4A7F3A4EBA /* libPods-PingingAppUnitTests.a */,
+				810ED53B99857085E0A881299288756D /* Pods_PingingApp.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/GBPing";
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8472E5C68662F85B006492C336432288 /* Pods-PingingAppUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				B38DBC208386396C87D668693C4B14E8 /* Pods-PingingAppUnitTests-acknowledgements.markdown */,
+				F24F519693F8AA2343CBE75656EEB3D1 /* Pods-PingingAppUnitTests-acknowledgements.plist */,
+				ACC4B12F20E87CC21A4230D6552CBC03 /* Pods-PingingAppUnitTests-dummy.m */,
+				2D6CA0915F249BBDFCD351DD8C517438 /* Pods-PingingAppUnitTests.debug.xcconfig */,
+				062907EE68CCB25F253485568E817C06 /* Pods-PingingAppUnitTests.release.xcconfig */,
+			);
+			name = "Pods-PingingAppUnitTests";
+			path = "Target Support Files/Pods-PingingAppUnitTests";
 			sourceTree = "<group>";
 		};
 		B4D982D5A5FDF4B11ABDC2EDF3AB2D0B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7825FBA077857A410EA55D7A63BA0DA2 /* GBPing */,
+				0DD49EAC1FA2840A2B695D3107280AF8 /* GBPing */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -161,8 +175,8 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				B4D982D5A5FDF4B11ABDC2EDF3AB2D0B /* Pods */,
-				6B56EC08F99280927669B139E9B849FD /* Products */,
-				5F218CA64A7F4CCAD331FF2053D31131 /* Targets Support Files */,
+				4DCF181C007C02830770F0C9E8FEAA79 /* Products */,
+				E81AAABE44997AE6BCC8753158C09964 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,67 +188,162 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E81AAABE44997AE6BCC8753158C09964 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EEF172E8F31054C9C77EA75AFE96E77B /* Pods-PingingApp */,
+				8472E5C68662F85B006492C336432288 /* Pods-PingingAppUnitTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		EEF172E8F31054C9C77EA75AFE96E77B /* Pods-PingingApp */ = {
+			isa = PBXGroup;
+			children = (
+				4ACEF192A2E2F7B13A85AFE130B48AC8 /* Pods-PingingApp.modulemap */,
+				42908D8F44EEA78D5FBCDDD85E0D2BB4 /* Pods-PingingApp-acknowledgements.markdown */,
+				F2A811834248ABF42E7C3F67930FA4F1 /* Pods-PingingApp-acknowledgements.plist */,
+				96A08C7D0B341A7530A71481E43AF33B /* Pods-PingingApp-dummy.m */,
+				C57CA4C158A857BFFAD849914144276F /* Pods-PingingApp-frameworks.sh */,
+				4AE657F61AA4F5696AEE628E239642B1 /* Pods-PingingApp-Info.plist */,
+				382B176B597EA5962C6E5E9F12289DB0 /* Pods-PingingApp-umbrella.h */,
+				EB57CFF5E2DD5BB84C26A7C5CF306EB1 /* Pods-PingingApp.debug.xcconfig */,
+				E7BA183226A1DF70FA0FCBCC9889BC14 /* Pods-PingingApp.release.xcconfig */,
+			);
+			name = "Pods-PingingApp";
+			path = "Target Support Files/Pods-PingingApp";
+			sourceTree = "<group>";
+		};
+		F9E56284732411B10FD74E40C999C992 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CF0B6566B0F8B482ECF21AF64A65631 /* GBPing-framework.modulemap */,
+				79BFFC7A196D72CA5EECACADCB27CE8F /* GBPing-framework.xcconfig */,
+				2EE32A6A5547AFA62E1B9569C5431352 /* GBPing-framework-dummy.m */,
+				710E08ED61DD7ABB768919C5C7601A9E /* GBPing-framework-Info.plist */,
+				6F1C52D7B27F08955A3AB52F20BD6426 /* GBPing-framework-prefix.pch */,
+				BFD2FDF1070F09CFC71570C4A00E28B8 /* GBPing-framework-umbrella.h */,
+				0C1298677C655F0625CC23C1865CA944 /* GBPing-library.xcconfig */,
+				275109B0CCC9533BF7DBB476CFF9ECAE /* GBPing-library-dummy.m */,
+				4840197FE4236C0659C6E6B83848BE22 /* GBPing-library-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GBPing-framework";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		01B3A192182C4F2DB1BDB90A424B80A1 /* Headers */ = {
+		22FC85862EDB59FE845ABA605BEF8147 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88B73C216D282BB01FF58E520DB18462 /* GBPing-umbrella.h in Headers */,
-				681B8EC39D52C43E1A7CA2B4434C7773 /* GBPing.h in Headers */,
-				9785CF095F4274425C4817E65CC64318 /* GBPingSummary.h in Headers */,
-				CCA99B3E1AB0338B4854AB7779711672 /* ICMPHeader.h in Headers */,
+				BE2DF655C9ED9B49125411D4FB5C02B7 /* Pods-PingingApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		48B1F6C256E9545B6D5C506A096285B5 /* Headers */ = {
+		2FC88B5C83463D24319D46927221C500 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C915B5BAD58DF96783C1327329C9555 /* Pods-PingingApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C6A8F18F67962E223DCDA9AEFE328FB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76C369E431F8F93D5A3827F60A5937AD /* GBPing.h in Headers */,
+				619B3CB29779A1337ED8001F51464ED5 /* GBPingSummary.h in Headers */,
+				51CEFFA3FEDF17F5AB2FA867155A672C /* ICMPHeader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54C2CFA270DAEF4CA93CFA4FD437900 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAD6394A0B62A59823E84024E321DD9E /* GBPing-framework-umbrella.h in Headers */,
+				779E8C92B0E1EA0CED3B6BFFFD37E4E9 /* GBPing.h in Headers */,
+				5F4D060C36040C80EC023D5E7E68AC1D /* GBPingSummary.h in Headers */,
+				2B7E7C63FF0B3A1EB0A9977896CEEBB8 /* ICMPHeader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		75992CFB612A9B5E340B746C710BC330 /* Pods-PingingApp */ = {
+		58F2791739628E89246F9B9E5724C76F /* GBPing-library */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E9AF32E4BE6D568289052B0BDB9DE6F7 /* Build configuration list for PBXNativeTarget "Pods-PingingApp" */;
+			buildConfigurationList = 7231BABB8032A8725B6A431003134578 /* Build configuration list for PBXNativeTarget "GBPing-library" */;
 			buildPhases = (
-				48B1F6C256E9545B6D5C506A096285B5 /* Headers */,
-				6B17C1E9E39A6664770489DE589A37CE /* Sources */,
-				EF9AE68BABBC8959849D546DA5BCBAAC /* Frameworks */,
-				7A058E6D7B68DC7811ED25703B704B51 /* Resources */,
+				6C6A8F18F67962E223DCDA9AEFE328FB /* Headers */,
+				D52DBE5701E9CBE6AF39241A66B6BBCC /* Sources */,
+				1A2F546CFEBC8B6CAFB5D51EF61885D5 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8257FCD802801F03123265C1F4FA5B70 /* PBXTargetDependency */,
+			);
+			name = "GBPing-library";
+			productName = "GBPing-library";
+			productReference = CD25A37EBF37E6BCD6D83510902DBAAD /* libGBPing-library.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		71D299408EA767132A330DA580ECAE9D /* GBPing-framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD8555801AF01F2F93B5D72C8551E553 /* Build configuration list for PBXNativeTarget "GBPing-framework" */;
+			buildPhases = (
+				A54C2CFA270DAEF4CA93CFA4FD437900 /* Headers */,
+				CBA35826E5A9F9668EC866A967D866AA /* Sources */,
+				0394EEA0EAB8194EAC1F5C948DD259F8 /* Frameworks */,
+				3AB20BEBD72D396EB8DB3332E41684C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GBPing-framework";
+			productName = "GBPing-framework";
+			productReference = 3A54ED1DE33CE06EBE7CC6B32EF92DD5 /* GBPing.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		75992CFB612A9B5E340B746C710BC330 /* Pods-PingingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A8819962B878DD108BB3167749643FB /* Build configuration list for PBXNativeTarget "Pods-PingingApp" */;
+			buildPhases = (
+				22FC85862EDB59FE845ABA605BEF8147 /* Headers */,
+				AA36A02153CD3064984FF2711CB79AD3 /* Sources */,
+				A3507654D1C2E72CC33AC96F8E51C4EA /* Frameworks */,
+				ABDE60598005E27C81056D2AC36CDEDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CF8C73DE48D78056DD60C04B8757618 /* PBXTargetDependency */,
 			);
 			name = "Pods-PingingApp";
 			productName = "Pods-PingingApp";
 			productReference = 810ED53B99857085E0A881299288756D /* Pods_PingingApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B75B4785F3A4E5A5455B1AC0DE538064 /* GBPing */ = {
+		D49B5A8BD08B60E96EFEC42DB4106E66 /* Pods-PingingAppUnitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0272ACAC08B7A282B1450FD18A7D4501 /* Build configuration list for PBXNativeTarget "GBPing" */;
+			buildConfigurationList = 53D5AB6D41CED27B0CD5DA1A9626B05A /* Build configuration list for PBXNativeTarget "Pods-PingingAppUnitTests" */;
 			buildPhases = (
-				01B3A192182C4F2DB1BDB90A424B80A1 /* Headers */,
-				37168A2987D580F57C4A61E33FC8F054 /* Sources */,
-				BC29E37F446C4543C37AD9C27E86ACC0 /* Frameworks */,
-				3375934C5B23B6AFFC9DC70F228E708B /* Resources */,
+				2FC88B5C83463D24319D46927221C500 /* Headers */,
+				E364700F71CC95CEEB873C1D6E98E764 /* Sources */,
+				9B6D199A3AA637C11EDF76F5AFB6C57A /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2070A69E867D91C64FD0CD2BD60F2F0B /* PBXTargetDependency */,
 			);
-			name = GBPing;
-			productName = GBPing;
-			productReference = B53E9041CA92E47FD7EA2AB73757CF38 /* GBPing.framework */;
-			productType = "com.apple.product-type.framework";
+			name = "Pods-PingingAppUnitTests";
+			productName = "Pods-PingingAppUnitTests";
+			productReference = 47588CA74092C748A500BF4A7F3A4EBA /* libPods-PingingAppUnitTests.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -254,25 +363,27 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 6B56EC08F99280927669B139E9B849FD /* Products */;
+			productRefGroup = 4DCF181C007C02830770F0C9E8FEAA79 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B75B4785F3A4E5A5455B1AC0DE538064 /* GBPing */,
+				71D299408EA767132A330DA580ECAE9D /* GBPing-framework */,
+				58F2791739628E89246F9B9E5724C76F /* GBPing-library */,
 				75992CFB612A9B5E340B746C710BC330 /* Pods-PingingApp */,
+				D49B5A8BD08B60E96EFEC42DB4106E66 /* Pods-PingingAppUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3375934C5B23B6AFFC9DC70F228E708B /* Resources */ = {
+		3AB20BEBD72D396EB8DB3332E41684C5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7A058E6D7B68DC7811ED25703B704B51 /* Resources */ = {
+		ABDE60598005E27C81056D2AC36CDEDA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -282,110 +393,88 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		37168A2987D580F57C4A61E33FC8F054 /* Sources */ = {
+		AA36A02153CD3064984FF2711CB79AD3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAA28005C700FDD22923A44AECF16848 /* GBPing-dummy.m in Sources */,
-				C12D183B4E6B22EA29010EEBAC7312F0 /* GBPing.m in Sources */,
-				48CC9185CEDCA04CE790AD88AB786658 /* GBPingSummary.m in Sources */,
+				3B5A21087C57854A3F2D8AEE3E1F2541 /* Pods-PingingApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6B17C1E9E39A6664770489DE589A37CE /* Sources */ = {
+		CBA35826E5A9F9668EC866A967D866AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B994EBC655301F49C20383317CA5667 /* Pods-PingingApp-dummy.m in Sources */,
+				5C6AC4FE37EF9F2CD2A58839F4F69947 /* GBPing-framework-dummy.m in Sources */,
+				F7AD8CD66B4C221DB57B5E32155FD794 /* GBPing.m in Sources */,
+				0945E6863E95150D751EE51D082615ED /* GBPingSummary.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D52DBE5701E9CBE6AF39241A66B6BBCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3914170F617DE0B2A3F4ACF0C65D4BB /* GBPing-library-dummy.m in Sources */,
+				06B1523D613C99C03B121770A35B99EF /* GBPing.m in Sources */,
+				4151F9C9EDEF28D04DD1D0920D0ACF6C /* GBPingSummary.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E364700F71CC95CEEB873C1D6E98E764 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				050B008281C4DBD4A79184F5C581FA6D /* Pods-PingingAppUnitTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8257FCD802801F03123265C1F4FA5B70 /* PBXTargetDependency */ = {
+		2070A69E867D91C64FD0CD2BD60F2F0B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = GBPing;
-			target = B75B4785F3A4E5A5455B1AC0DE538064 /* GBPing */;
-			targetProxy = 3521C142D83A22F3C1FE80051C1FF126 /* PBXContainerItemProxy */;
+			name = "GBPing-library";
+			target = 58F2791739628E89246F9B9E5724C76F /* GBPing-library */;
+			targetProxy = 721CFBF2CF0671692DA12CEDA848317C /* PBXContainerItemProxy */;
+		};
+		2CF8C73DE48D78056DD60C04B8757618 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GBPing-framework";
+			target = 71D299408EA767132A330DA580ECAE9D /* GBPing-framework */;
+			targetProxy = F9CF0A821349FDAAA7EBC9D96C540106 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		01A74FFFA21A868E70FEF496EE24B9ED /* Release */ = {
+		5F5446147884C0E21804D5E0E126ADFF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90B157E68C272626F14E6CBFCF7B925D /* GBPing.xcconfig */;
+			baseConfigurationReference = 0C1298677C655F0625CC23C1865CA944 /* GBPing-library.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GBPing/GBPing-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GBPing/GBPing-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/GBPing/GBPing.modulemap";
+				GCC_PREFIX_HEADER = "Target Support Files/GBPing-library/GBPing-library-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_MODULE_NAME = GBPing;
-				PRODUCT_NAME = GBPing;
+				PRODUCT_NAME = "GBPing-library";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		3615AF4512C2503BA7A98F34481CBB64 /* Debug */ = {
+		6DDC26C697853C1682FA52F35A8E6B62 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90B157E68C272626F14E6CBFCF7B925D /* GBPing.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GBPing/GBPing-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GBPing/GBPing-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/GBPing/GBPing.modulemap";
-				PRODUCT_MODULE_NAME = GBPing;
-				PRODUCT_NAME = GBPing;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		56C3A3F9FB6B75EAF253520DBBE4EBF1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F093BABA3E6A9CAFE715EBE1A589593 /* Pods-PingingApp.debug.xcconfig */;
+			baseConfigurationReference = E7BA183226A1DF70FA0FCBCC9889BC14 /* Pods-PingingApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -415,8 +504,30 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		73A32C56602836DBF46DA70669A08E2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D6CA0915F249BBDFCD351DD8C517438 /* Pods-PingingAppUnitTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -544,9 +655,91 @@
 			};
 			name = Debug;
 		};
-		B162D8C66E371FB9EE3E51B677453EAB /* Release */ = {
+		9D5F5F03262F34BA12A753D120270EC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD6D0FF6493C6C0AB5A8659528B8FA87 /* Pods-PingingApp.release.xcconfig */;
+			baseConfigurationReference = 0C1298677C655F0625CC23C1865CA944 /* GBPing-library.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/GBPing-library/GBPing-library-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = GBPing;
+				PRODUCT_NAME = "GBPing-library";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A86E27BC04A23DD07426C6E67C7CD98A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79BFFC7A196D72CA5EECACADCB27CE8F /* GBPing-framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GBPing-framework/GBPing-framework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GBPing-framework/GBPing-framework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GBPing-framework/GBPing-framework.modulemap";
+				PRODUCT_MODULE_NAME = GBPing;
+				PRODUCT_NAME = GBPing;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CBAB4BD9CE88C97B4A96252DE5471029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 062907EE68CCB25F253485568E817C06 /* Pods-PingingAppUnitTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEA6C344C7CEBD0FA3446E93297548FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB57CFF5E2DD5BB84C26A7C5CF306EB1 /* Pods-PingingApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -576,20 +769,54 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
+		};
+		F21D2216B7A41F3C9E4C9D48F6077216 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79BFFC7A196D72CA5EECACADCB27CE8F /* GBPing-framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GBPing-framework/GBPing-framework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GBPing-framework/GBPing-framework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GBPing-framework/GBPing-framework.modulemap";
+				PRODUCT_MODULE_NAME = GBPing;
+				PRODUCT_NAME = GBPing;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0272ACAC08B7A282B1450FD18A7D4501 /* Build configuration list for PBXNativeTarget "GBPing" */ = {
+		1A8819962B878DD108BB3167749643FB /* Build configuration list for PBXNativeTarget "Pods-PingingApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3615AF4512C2503BA7A98F34481CBB64 /* Debug */,
-				01A74FFFA21A868E70FEF496EE24B9ED /* Release */,
+				DEA6C344C7CEBD0FA3446E93297548FA /* Debug */,
+				6DDC26C697853C1682FA52F35A8E6B62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -603,11 +830,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E9AF32E4BE6D568289052B0BDB9DE6F7 /* Build configuration list for PBXNativeTarget "Pods-PingingApp" */ = {
+		53D5AB6D41CED27B0CD5DA1A9626B05A /* Build configuration list for PBXNativeTarget "Pods-PingingAppUnitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				56C3A3F9FB6B75EAF253520DBBE4EBF1 /* Debug */,
-				B162D8C66E371FB9EE3E51B677453EAB /* Release */,
+				73A32C56602836DBF46DA70669A08E2F /* Debug */,
+				CBAB4BD9CE88C97B4A96252DE5471029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7231BABB8032A8725B6A431003134578 /* Build configuration list for PBXNativeTarget "GBPing-library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D5F5F03262F34BA12A753D120270EC7 /* Debug */,
+				5F5446147884C0E21804D5E0E126ADFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD8555801AF01F2F93B5D72C8551E553 /* Build configuration list for PBXNativeTarget "GBPing-framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F21D2216B7A41F3C9E4C9D48F6077216 /* Debug */,
+				A86E27BC04A23DD07426C6E67C7CD98A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

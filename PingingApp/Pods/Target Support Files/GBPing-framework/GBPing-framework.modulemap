@@ -1,5 +1,5 @@
 framework module GBPing {
-  umbrella header "GBPing-umbrella.h"
+  umbrella header "GBPing-framework-umbrella.h"
 
   export *
   module * { export * }

@@ -5,9 +5,18 @@ target 'PingingApp' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for PingingApp
+  # Pods for PingingApp'
+  #pod doesnt support multithreadding
   #pod 'PlainPing', :path => 'PlainPing'
+  #pod doesnt support IP address as host
   #pod 'SwiftPing', :path => 'SwiftPing'
- # pod 'ReachabilitySwift'
   pod 'GBPing'
+  
+end
+
+target 'PingingAppUnitTests' do
+  inherit! :search_paths
+  pod 'GBPing'
+
+  
 end

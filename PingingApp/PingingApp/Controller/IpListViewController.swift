@@ -46,25 +46,36 @@ class IpListViewController: UITableViewController, UpdateIpListDelegate {
     @IBAction func SortTapped(_ sender: UIBarButtonItem) {
         let alert = UIAlertController(title: "Sort type", message: "Select your sorting type", preferredStyle: .actionSheet)
 
-        let sortByIp = UIAlertAction(title: "Sort by IP", style: .default) { (_) in
-            self.pinger.ipObjArray.sort {$0.ipAddress > $1.ipAddress}
+        let sortByIpAsc = UIAlertAction(title: "Sort by IP (asc)", style: .default) { (_) in
+            self.pinger.ipObjArray.sort {$0.ipNumber < $1.ipNumber}
             self.tableView.reloadData()
         }
         
-        let sortByReachability = UIAlertAction(title: "Sort by reachability", style: .default) { (_) in
+        let sortByReachabilityAsc = UIAlertAction(title: "Sort by reachability (asc)", style: .default) { (_) in
             self.pinger.ipObjArray.sort {$0.reachable && !$1.reachable}
             self.tableView.reloadData()
         }
         
-        alert.addAction(sortByIp)
-        alert.addAction(sortByReachability)
+        let sortByIpDesc = UIAlertAction(title: "Sort by IP (desc)", style: .default) { (_) in
+            self.pinger.ipObjArray.sort {$0.ipNumber > $1.ipNumber}
+            self.tableView.reloadData()
+        }
+        
+        let sortByReachabilityDesc = UIAlertAction(title: "Sort by reachability (desc)", style: .default) { (_) in
+            self.pinger.ipObjArray.sort {!$0.reachable && $1.reachable}
+            self.tableView.reloadData()
+        }
+        
+        alert.addAction(sortByIpAsc)
+        alert.addAction(sortByIpDesc)
+        alert.addAction(sortByReachabilityAsc)
+        alert.addAction(sortByReachabilityDesc)
         
         present(alert, animated: true, completion: nil)
     }
     
     @IBAction func startPinging(_ sender: UIBarButtonItem) {
         if pinger.isStopped{
-            pinger.isStopped = false
             pinger.startPinging()
             StartButton.title = "Stop"
         }
@@ -72,7 +83,6 @@ class IpListViewController: UITableViewController, UpdateIpListDelegate {
             StartButton.title = "Start"
             pinger.isStopped = true
         }
-        pinger.startPinging()
     }
     
     func updateUI() {

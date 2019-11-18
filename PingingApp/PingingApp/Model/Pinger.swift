@@ -18,7 +18,7 @@ class Pinger : NSObject, GBPingDelegate {
     private let NUMBER_OF_PINGS : Int = 3
     private let NUMBER_OF_IP : Int = 255
     
-    private var initialIpArray : [String] = []
+    internal var initialIpArray : [String] = []
 
     public var delegate : UpdateIpListDelegate?
     public var ipObjArray : [Ip] = []
@@ -31,13 +31,11 @@ class Pinger : NSObject, GBPingDelegate {
         }
     }
 
-        // Do any additional setup after loading the view, typically from a nib.
     func startPinging(){
-        print("Start Pinging")
+        isStopped = false
         DispatchQueue.concurrentPerform(iterations: NUMBER_OF_PINGERS) { (int) in
             mockPing(currentIndex: int)
         }
-        
     }
     
     func mockPing(currentIndex: Int){
@@ -52,7 +50,9 @@ class Pinger : NSObject, GBPingDelegate {
         
         let ipObj = Ip()
             //imitation of ping
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+        let secondsToWait = Double(1.0 + (Float(currentIndex) / 10))
+        print("Seconds \(secondsToWait)")
+        DispatchQueue.main.asyncAfter(deadline: .now() + secondsToWait) {
             if self.initialIpArray.count <= currentIndex{
                 self.isStopped = true
                 return
@@ -68,7 +68,7 @@ class Pinger : NSObject, GBPingDelegate {
        
     }
     
-//
+//    Lib doesn't accept IP address as HOST
 //    private func ping(currentIdx: Int){
 //        if ipObjArray.count >= 254{
 //            isStopped = true
