@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6B7584481DA387B27AC8B851 /* Pods_PingingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45D0F61D8C7D85CD2783D76 /* Pods_PingingApp.framework */; };
 		9FDA6B5A873BF48B93D652FE /* libPods-PingingAppUnitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D81C26488617C5F9341DF0 /* libPods-PingingAppUnitTests.a */; };
+		C7017924238435B5009AB31C /* IpStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7017923238435B5009AB31C /* IpStorage.swift */; };
+		C701792623845C64009AB31C /* PingableIp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C701792523845C64009AB31C /* PingableIp.swift */; };
 		C70495F22376DAB60075B7DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70495F12376DAB60075B7DC /* SceneDelegate.swift */; };
 		C70495F42376DAB60075B7DC /* IpListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70495F32376DAB60075B7DC /* IpListViewController.swift */; };
 		C70495F72376DAB70075B7DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70495F52376DAB70075B7DC /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 		54D81C26488617C5F9341DF0 /* libPods-PingingAppUnitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PingingAppUnitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F848BCD1C9DD691DE9E4EDF /* Pods-PingingAppUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingingAppUnitTests.debug.xcconfig"; path = "Target Support Files/Pods-PingingAppUnitTests/Pods-PingingAppUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C45D0F61D8C7D85CD2783D76 /* Pods_PingingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PingingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7017923238435B5009AB31C /* IpStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpStorage.swift; sourceTree = "<group>"; };
+		C701792523845C64009AB31C /* PingableIp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingableIp.swift; sourceTree = "<group>"; };
 		C70495EC2376DAB60075B7DC /* PingingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PingingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70495F12376DAB60075B7DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C70495F32376DAB60075B7DC /* IpListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpListViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 		C70495EE2376DAB60075B7DC /* PingingApp */ = {
 			isa = PBXGroup;
 			children = (
+				C7D76D0D2381767F0027841B /* PingingApp-Bridging-Header.h */,
+				C7FDA37D238306F300BBB54E /* ObjC */,
 				C7862D6F237710FA004A167C /* Controller */,
 				C7862D6E237710F1004A167C /* View */,
 				C7862D6D237710E0004A167C /* Model */,
@@ -131,9 +137,6 @@
 				C70495FA2376DABA0075B7DC /* LaunchScreen.storyboard */,
 				C70495FD2376DABA0075B7DC /* Info.plist */,
 				C7D76D0F238179D30027841B /* AppDelegate.swift */,
-				C7D76D0D2381767F0027841B /* PingingApp-Bridging-Header.h */,
-				C7D76D0B238175E00027841B /* ObjCPinger.m */,
-				C7D76D0E2381773F0027841B /* ObjCPinger.h */,
 			);
 			path = PingingApp;
 			sourceTree = "<group>";
@@ -145,6 +148,8 @@
 				C7EA5BD42376F9EE00CB83E8 /* IpGetter.swift */,
 				C76EB9DB237ABC95008F7695 /* Pinger.swift */,
 				C76EB9DD237AD0AB008F7695 /* SwiftyPing.swift */,
+				C7017923238435B5009AB31C /* IpStorage.swift */,
+				C701792523845C64009AB31C /* PingableIp.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,6 +177,15 @@
 				C7FCCD65238223F000D02E4D /* Info.plist */,
 			);
 			path = PingingAppUnitTests;
+			sourceTree = "<group>";
+		};
+		C7FDA37D238306F300BBB54E /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				C7D76D0B238175E00027841B /* ObjCPinger.m */,
+				C7D76D0E2381773F0027841B /* ObjCPinger.h */,
+			);
+			path = ObjC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,11 +359,13 @@
 			files = (
 				C7D76D10238179D30027841B /* AppDelegate.swift in Sources */,
 				C76EB9DC237ABC95008F7695 /* Pinger.swift in Sources */,
+				C7017924238435B5009AB31C /* IpStorage.swift in Sources */,
 				C70495F42376DAB60075B7DC /* IpListViewController.swift in Sources */,
 				C7EA5BD52376F9EE00CB83E8 /* IpGetter.swift in Sources */,
 				C76EB9DE237AD0AB008F7695 /* SwiftyPing.swift in Sources */,
 				C7EA5BD72377075A00CB83E8 /* Ip.swift in Sources */,
 				C7D76D0C238175E00027841B /* ObjCPinger.m in Sources */,
+				C701792623845C64009AB31C /* PingableIp.swift in Sources */,
 				C70495F22376DAB60075B7DC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

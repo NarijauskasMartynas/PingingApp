@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import GBPing
-
 
 class IpListViewController: UITableViewController, UpdateIpListDelegate {
     @IBOutlet weak var StartButton: UIBarButtonItem!
@@ -22,19 +20,20 @@ class IpListViewController: UITableViewController, UpdateIpListDelegate {
         let ipGetter = IpGetter()
         let ipAddress = ipGetter.getIPAddress()
         pinger.generateIpAddresses(startingAddress: ipAddress)
-        pinger.delegate = self
+        IpStorage.delegate = self
+       
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return pinger.ipObjArray.count
+        return IpStorage.ipObjArray.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "IpItemCell", for: indexPath)
         
-        if pinger.ipObjArray.count > 0 {
-            cell.textLabel?.text = (pinger.ipObjArray[indexPath.row].ipAddress)
-            let image = pinger.ipObjArray[indexPath.row].reachable ? UIImage(systemName: "sun.min") : UIImage(systemName: "zzz")
+        if IpStorage.ipObjArray.count > 0 {
+            cell.textLabel?.text = (IpStorage.ipObjArray[indexPath.row].ipAddress)
+            let image = IpStorage.ipObjArray[indexPath.row].reachable ? UIImage(systemName: "sun.min") : UIImage(systemName: "zzz")
             cell.accessoryView = UIImageView(image: image)
         }
         else{
@@ -44,25 +43,27 @@ class IpListViewController: UITableViewController, UpdateIpListDelegate {
         return cell
     }
     @IBAction func SortTapped(_ sender: UIBarButtonItem) {
+        tableView.reloadData()
+        print("VISO YRA \(IpStorage.ipObjArray.count)" )
         let alert = UIAlertController(title: "Sort type", message: "Select your sorting type", preferredStyle: .actionSheet)
 
         let sortByIpAsc = UIAlertAction(title: "Sort by IP (asc)", style: .default) { (_) in
-            self.pinger.ipObjArray.sort {$0.ipNumber < $1.ipNumber}
+            IpStorage.ipObjArray.sort {$0.ipNumber < $1.ipNumber}
             self.tableView.reloadData()
         }
         
         let sortByReachabilityAsc = UIAlertAction(title: "Sort by reachability (asc)", style: .default) { (_) in
-            self.pinger.ipObjArray.sort {$0.reachable && !$1.reachable}
+            IpStorage.ipObjArray.sort {$0.reachable && !$1.reachable}
             self.tableView.reloadData()
         }
         
         let sortByIpDesc = UIAlertAction(title: "Sort by IP (desc)", style: .default) { (_) in
-            self.pinger.ipObjArray.sort {$0.ipNumber > $1.ipNumber}
+            IpStorage.ipObjArray.sort {$0.ipNumber > $1.ipNumber}
             self.tableView.reloadData()
         }
         
         let sortByReachabilityDesc = UIAlertAction(title: "Sort by reachability (desc)", style: .default) { (_) in
-            self.pinger.ipObjArray.sort {!$0.reachable && $1.reachable}
+            IpStorage.ipObjArray.sort {!$0.reachable && $1.reachable}
             self.tableView.reloadData()
         }
         
@@ -86,11 +87,10 @@ class IpListViewController: UITableViewController, UpdateIpListDelegate {
     }
     
     func updateUI() {
-        ProgressView.setProgress(Float(pinger.ipObjArray.count) / Float(255), animated: true)
+        print("UPDATE UI********")
+        ProgressView.setProgress(Float(IpStorage.ipObjArray.count) / Float(255), animated: true)
         tableView.reloadData()
         StartButton.title = pinger.isStopped ? "Start" : "Stop"
     }
-
+    
 }
-
-

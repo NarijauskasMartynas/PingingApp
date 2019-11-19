@@ -17,6 +17,8 @@
 @property (strong, nonatomic) GBPing *ping;
 
 
-- (void) pingHost:(NSString *)ipAddres;
+- (void) pingHost:(NSString *)ipAddress : (NSInteger)threadIndex;
+
+- (void) prepareObject;
 
 @end

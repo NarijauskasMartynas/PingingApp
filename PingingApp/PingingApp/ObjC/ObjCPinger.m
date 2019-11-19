@@ -7,10 +7,17 @@
 //
 
 #import "ObjCPinger.h"
+#import "PingingApp-Swift.h"
 
 @implementation ObjCPinger
 
--(void) pingHost: (NSString *)ipAddress{
+Pinger *swiftPinger;
+
+-(void) prepareObject{
+    swiftPinger = [[Pinger alloc] init];
+}
+
+-(void) pingHost: (NSString *)ipAddress : (NSInteger)threadIndex{
     NSLog(@"ITS WORKING");
     
      self.ping = [GBPing new];
@@ -26,12 +33,22 @@
             if (success) {
                 // start pinging
                 [self.ping startPinging];
-                
+                double b = threadIndex;
+                double a = 1 + b/10;
+                NSLog(@"cia pasiekia %f", a);
                 // stop it after 5 seconds
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                    NSLog(@"stop it");
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((250 + threadIndex * 10) * NSEC_PER_MSEC)), dispatch_get_main_queue(), ^{
                     [self.ping stop];
                     self.ping = nil;
+                    
+                    NSString *ipToCall = [swiftPinger getIpAddressWithIdx:threadIndex];
+                    NSLog(@"TOKS IP %@", ipToCall);
+                    if ([ipToCall isEqualToString:@"-1"]){
+                        return;
+                    }
+                    else{
+                        [self pingHost: ipToCall :threadIndex];
+                    }
                 });
             } else {
                 NSLog(@"failed to start");
@@ -40,28 +57,32 @@
 }
 
 -(void)ping:(GBPing *)pinger didReceiveReplyWithSummary:(GBPingSummary *)summary {
-    NSLog(@"REPLY>  %@", summary.host);
-    NSLog(@"REPLY>  %u", summary.status);
-
+    NSLog(@"cia pasiekia %@", summary.host);
+    [swiftPinger updateIpObjListWithIpAddress:summary.host status:summary.status];
 }
 
 -(void)ping:(GBPing *)pinger didReceiveUnexpectedReplyWithSummary:(GBPingSummary *)summary {
     NSLog(@"BREPLY> %@", summary);
+    [swiftPinger updateIpObjListWithIpAddress:summary.host status:summary.status];
 }
 
 -(void)ping:(GBPing *)pinger didSendPingWithSummary:(GBPingSummary *)summary {
     NSLog(@"SENT>   %@", summary);
+    [swiftPinger updateIpObjListWithIpAddress:summary.host status:summary.status];
 }
 
 -(void)ping:(GBPing *)pinger didTimeoutWithSummary:(GBPingSummary *)summary {
     NSLog(@"TIMOUT> %@", summary);
+    [swiftPinger updateIpObjListWithIpAddress:summary.host status:summary.status];
 }
 
 -(void)ping:(GBPing *)pinger didFailWithError:(NSError *)error {
     NSLog(@"FAIL>   %@", error);
+
 }
 
 -(void)ping:(GBPing *)pinger didFailToSendPingWithSummary:(GBPingSummary *)summary error:(NSError *)error {
     NSLog(@"FSENT>  %@, %@", summary, error);
+    [swiftPinger updateIpObjListWithIpAddress:summary.host status:summary.status];
 }
 @end
