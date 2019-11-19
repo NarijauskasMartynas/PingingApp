@@ -17,7 +17,6 @@
 		C70495F92376DABA0075B7DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C70495F82376DABA0075B7DC /* Assets.xcassets */; };
 		C70495FC2376DABA0075B7DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70495FA2376DABA0075B7DC /* LaunchScreen.storyboard */; };
 		C76EB9DC237ABC95008F7695 /* Pinger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EB9DB237ABC95008F7695 /* Pinger.swift */; };
-		C76EB9DE237AD0AB008F7695 /* SwiftyPing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EB9DD237AD0AB008F7695 /* SwiftyPing.swift */; };
 		C7D76D0C238175E00027841B /* ObjCPinger.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D76D0B238175E00027841B /* ObjCPinger.m */; };
 		C7D76D10238179D30027841B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D76D0F238179D30027841B /* AppDelegate.swift */; };
 		C7EA5BD52376F9EE00CB83E8 /* IpGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA5BD42376F9EE00CB83E8 /* IpGetter.swift */; };
@@ -50,7 +49,6 @@
 		C70495FB2376DABA0075B7DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C70495FD2376DABA0075B7DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C76EB9DB237ABC95008F7695 /* Pinger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pinger.swift; sourceTree = "<group>"; };
-		C76EB9DD237AD0AB008F7695 /* SwiftyPing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyPing.swift; sourceTree = "<group>"; };
 		C7D76D0B238175E00027841B /* ObjCPinger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCPinger.m; sourceTree = "<group>"; };
 		C7D76D0D2381767F0027841B /* PingingApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PingingApp-Bridging-Header.h"; path = "/Users/martynasn/Desktop/PingingApp/PingingApp/PingingApp/PingingApp-Bridging-Header.h"; sourceTree = "<absolute>"; };
 		C7D76D0E2381773F0027841B /* ObjCPinger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCPinger.h; sourceTree = "<group>"; };
@@ -147,7 +145,6 @@
 				C7EA5BD62377075A00CB83E8 /* Ip.swift */,
 				C7EA5BD42376F9EE00CB83E8 /* IpGetter.swift */,
 				C76EB9DB237ABC95008F7695 /* Pinger.swift */,
-				C76EB9DD237AD0AB008F7695 /* SwiftyPing.swift */,
 				C7017923238435B5009AB31C /* IpStorage.swift */,
 				C701792523845C64009AB31C /* PingableIp.swift */,
 			);
@@ -362,7 +359,6 @@
 				C7017924238435B5009AB31C /* IpStorage.swift in Sources */,
 				C70495F42376DAB60075B7DC /* IpListViewController.swift in Sources */,
 				C7EA5BD52376F9EE00CB83E8 /* IpGetter.swift in Sources */,
-				C76EB9DE237AD0AB008F7695 /* SwiftyPing.swift in Sources */,
 				C7EA5BD72377075A00CB83E8 /* Ip.swift in Sources */,
 				C7D76D0C238175E00027841B /* ObjCPinger.m in Sources */,
 				C701792623845C64009AB31C /* PingableIp.swift in Sources */,

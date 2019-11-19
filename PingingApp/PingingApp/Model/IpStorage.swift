@@ -12,11 +12,13 @@ protocol UpdateIpListDelegate{
     func updateUI()
 }
 
-class IpStorage{
+struct IpStorage{
         
-    static public var initialIpArray : [PingableIp] = []
+    static var initialIpArray : [PingableIp] = []
 
     static var delegate : UpdateIpListDelegate?
+    
+    static var isStopped : Bool = true
     
     static var ipObjArray : [Ip] = [] {
         didSet{

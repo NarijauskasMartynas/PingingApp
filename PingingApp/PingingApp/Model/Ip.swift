@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Ip{
+struct Ip{
     var ipAddress : String = ""
     var reachable : Bool = false
     var ipNumber : Int {

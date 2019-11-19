@@ -42,9 +42,8 @@ class IpListViewController: UITableViewController, UpdateIpListDelegate {
         
         return cell
     }
+
     @IBAction func SortTapped(_ sender: UIBarButtonItem) {
-        tableView.reloadData()
-        print("VISO YRA \(IpStorage.ipObjArray.count)" )
         let alert = UIAlertController(title: "Sort type", message: "Select your sorting type", preferredStyle: .actionSheet)
 
         let sortByIpAsc = UIAlertAction(title: "Sort by IP (asc)", style: .default) { (_) in
@@ -76,21 +75,20 @@ class IpListViewController: UITableViewController, UpdateIpListDelegate {
     }
     
     @IBAction func startPinging(_ sender: UIBarButtonItem) {
-        if pinger.isStopped{
+        if IpStorage.isStopped{
             pinger.startPinging()
             StartButton.title = "Stop"
         }
         else{
             StartButton.title = "Start"
-            pinger.isStopped = true
+            IpStorage.isStopped = true
         }
     }
     
     func updateUI() {
-        print("UPDATE UI********")
         ProgressView.setProgress(Float(IpStorage.ipObjArray.count) / Float(255), animated: true)
         tableView.reloadData()
-        StartButton.title = pinger.isStopped ? "Start" : "Stop"
+        StartButton.title = IpStorage.isStopped ? "Start" : "Stop"
     }
     
 }
