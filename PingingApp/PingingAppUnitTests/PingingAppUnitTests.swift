@@ -16,6 +16,7 @@ class PingingAppUnitTests: XCTestCase {
     override func setUp() {
         getter = IpGetter()
         pinger = Pinger()
+        pinger.generateIpAddresses(startingAddress: getter.getIPAddress())
     }
 
     override func tearDown() {
@@ -30,7 +31,6 @@ class PingingAppUnitTests: XCTestCase {
     }
     
     func testGeneratedIp(){
-        pinger.generateIpAddresses(startingAddress: getter.getIPAddress())
         XCTAssertEqual(IpStorage.initialIpArray.count, 255)
     }
 
@@ -42,7 +42,6 @@ class PingingAppUnitTests: XCTestCase {
     
     func testGeneratedIpObj(){
         IpStorage.isStopped = false
-        pinger.generateIpAddresses(startingAddress: getter.getIPAddress())
         pinger.startPinging()
         let expect = expectation(description: "Wait to get ip obj")
         
@@ -72,7 +71,6 @@ class PingingAppUnitTests: XCTestCase {
     
     func testGetIpAddress(){
         IpStorage.isStopped = false
-        pinger.generateIpAddresses(startingAddress: getter.getIPAddress())
         XCTAssertEqual(pinger.getIpAddress(idx: 0), "\(getter.getIPAddress())1")
         
         IpStorage.isStopped = true
