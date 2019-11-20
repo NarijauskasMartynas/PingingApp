@@ -18,5 +18,4 @@ target 'PingingAppUnitTests' do
   inherit! :search_paths
   pod 'GBPing'
 
-  
 end

@@ -21,7 +21,6 @@ class IpListViewController: UITableViewController, UpdateIpListDelegate {
         let ipAddress = ipGetter.getIPAddress()
         pinger.generateIpAddresses(startingAddress: ipAddress)
         IpStorage.delegate = self
-       
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
