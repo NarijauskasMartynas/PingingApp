@@ -51,9 +51,7 @@ class Pinger : NSObject {
         }
     }
     
-    @objc public func getIpAddress(idx: Int) -> String{
-        
-        //print(isStopped)
+    @objc public func getIpAddress(idx: Int) -> String{        
         if IpStorage.isStopped {
             return "stop"
         }
