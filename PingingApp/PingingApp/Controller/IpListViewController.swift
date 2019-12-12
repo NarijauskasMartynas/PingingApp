@@ -35,10 +35,7 @@ class IpListViewController: UITableViewController, UpdateIpListDelegate {
             let image = IpStorage.ipObjArray[indexPath.row].reachable ? UIImage(systemName: "sun.min") : UIImage(systemName: "zzz")
             cell.accessoryView = UIImageView(image: image)
         }
-        else{
-            cell.textLabel?.text = "lalala"
-        }
-        
+
         return cell
     }
 
